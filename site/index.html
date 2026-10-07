@@ -1,0 +1,2769 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>150 design system templates</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:#09090b;color:#f4f4f5;
+  font-family:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+header{max-width:1500px;margin:0 auto;padding:54px 30px 22px}
+h1{font-size:31px;margin:0 0 10px;letter-spacing:-.025em;font-weight:600}
+p.sub{color:#9b9ba4;margin:0;max-width:80ch;line-height:1.6;font-size:14px}
+.tools{max-width:1500px;margin:0 auto;padding:18px 30px;display:flex;gap:9px;flex-wrap:wrap}
+input,select{background:#161619;border:1px solid #2b2b31;color:#f4f4f5;padding:9px 13px;
+  border-radius:7px;font:inherit;font-size:14px}
+input{flex:1;min-width:200px}
+.count{color:#9b9ba4;font-size:13px;align-self:center;margin-left:auto}
+.grid{max-width:1500px;margin:0 auto;padding:10px 30px 90px;display:grid;gap:18px;
+  grid-template-columns:repeat(auto-fill,minmax(268px,1fr))}
+.tile{text-decoration:none;color:inherit;border:1px solid #232329;border-radius:13px;
+  overflow:hidden;background:#111114;transition:border-color .15s,transform .15s}
+.tile:hover{border-color:#52525b;transform:translateY(-2px)}
+.prev{height:176px;border-bottom:1px solid;display:flex;flex-direction:column;overflow:hidden}
+.p-nav{display:flex;align-items:center;justify-content:space-between;padding:11px 14px;
+  border-bottom:1px solid currentColor;opacity:.92;font-size:13px}
+.p-nav i{width:40px;height:15px;display:block;opacity:.9}
+.p-body{padding:16px 14px;display:flex;flex-direction:column;gap:7px;flex:1}
+.p-body b{font-size:17px;line-height:1.14;font-weight:500}
+.p-body em{font-style:normal;font-size:10.5px;opacity:.62;line-height:1.4}
+.p-btn{width:62px;height:19px;display:block;margin-top:auto}
+.p-centered,.p-centered-panel{text-align:center;align-items:center}
+.p-centered .p-btn,.p-centered-panel .p-btn{margin-left:auto;margin-right:auto}
+.p-display b{font-size:23px;letter-spacing:-.03em;line-height:.96}
+.p-editorial b{font-size:16px}
+.p-editorial em{border-top:1px solid currentColor;padding-top:7px}
+.strip{display:flex;height:7px}
+.strip i{flex:1}
+.meta{padding:11px 13px;display:flex;flex-direction:column;gap:3px}
+.meta strong{font-size:14px;font-weight:600}
+.meta span{font-size:11px;color:#83838d}
+</style></head>
+<body>
+<header>
+  <h1>Design system templates</h1>
+  <p class="sub">150 landing pages. Colors, type, radii and spacing come from each system's
+  own tokens; page structure is chosen from that system's <code>## Layout</code> description and component
+  list; copy is seeded placeholder text for a fictional product. None of these reproduce the real sites.</p>
+</header>
+<div class="tools">
+  <input id="q" type="search" placeholder="Filter by name…" autocomplete="off">
+  <select id="theme"><option value="">All themes</option><option>light</option><option>dark</option><option>mixed</option></select>
+  <select id="hero"><option value="">All layouts</option><option>centered</option><option>centered-panel</option><option>display</option><option>editorial</option><option>split</option></select>
+  <span class="count" id="count"></span>
+</div>
+<div class="grid" id="grid">
+  <a class="tile" href="./001_b_cane.html"
+     data-name="bécane" data-theme="light"
+     data-hero="display" data-kind="scheduling">
+    <div class="prev" style="background:#f6f6f6;color:#0a0a0a;border-color:#e6e6e6">
+      <div class="p-nav"><span style="font-family:'Eurostile Becane', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">Bécane</span>
+        <i style="background:#ff0000;border-radius:0px"></i></div>
+      <div class="p-body p-display">
+        <b style="font-family:'Eurostile Becane', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">The meeting that books itself</b>
+        <em>Availability that respects focus time, time zones and the fact that nobody</em>
+        <i class="p-btn" style="background:#ff0000;border-radius:0px"></i>
+      </div>
+    </div>
+    <div class="strip"><i style="background:#f6f6f6"></i><i style="background:#e6e6e6"></i><i style="background:#0a0a0a"></i><i style="background:#ffffff"></i><i style="background:#b2b2b2"></i><i style="background:#ff0000"></i></div>
+    <div class="meta">
+      <strong>Bécane</strong>
+      <span>display · light · 6 colors</span>
+    </div>
+  </a>
+  <a class="tile" href="./002_goodnotes.html"
+     data-name="goodnotes" data-theme="light"
+     data-hero="display" data-kind="content">
+    <div class="prev" style="background:#ffffff;color:#000000;border-color:#bebebe">
+      <div class="p-nav"><span style="font-family:'Roobert', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">Goodnotes</span>
+        <i style="background:#57d2ee;border-radius:10px"></i></div>
+      <div class="p-body p-display">
+        <b style="font-family:'Roobert', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">From draft to edge in one click</b>
+        <em>Localize per field, preview the real page, and invalidate the edge cache t</em>
+        <i class="p-btn" style="background:#57d2ee;border-radius:10px"></i>
+      </div>
+    </div>
+    <div class="strip"><i style="background:#ffffff"></i><i style="background:#000000"></i><i style="background:#1e1e1e"></i><i style="background:#111213"></i><i style="background:#565656"></i><i style="background:#888889"></i><i style="background:#666666"></i></div>
+    <div class="meta">
+      <strong>Goodnotes</strong>
+      <span>display · light · 16 colors</span>
+    </div>
+  </a>
+  <a class="tile" href="./003_getburnt.html"
+     data-name="getburnt" data-theme="light"
+     data-hero="editorial" data-kind="crm">
+    <div class="prev" style="background:#ffffff;color:#1a1a17;border-color:#5f5f5d">
+      <div class="p-nav"><span style="font-family:'Nyght Serif', ui-serif, Georgia, Cambria, "Times New Roman", Times, serif">Getburnt</span>
+        <i style="background:#1a1a17;border-radius:1440px"></i></div>
+      <div class="p-body p-editorial">
+        <b style="font-family:'Nyght Serif', ui-serif, Georgia, Cambria, "Times New Roman", Times, serif">Close the loop on every conversation</b>
+        <em>Every email, call and ticket on one timeline, with automations you can rea</em>
+        <i class="p-btn" style="background:#1a1a17;border-radius:1440px"></i>
+      </div>
+    </div>
+    <div class="strip"><i style="background:#1a1a17"></i><i style="background:#ffffff"></i><i style="background:#5f5f5d"></i></div>
+    <div class="meta">
+      <strong>Getburnt</strong>
+      <span>editorial · light · 3 colors</span>
+    </div>
+  </a>
+  <a class="tile" href="./004_august_health_ehr.html"
+     data-name="august health ehr" data-theme="light"
+     data-hero="centered" data-kind="security">
+    <div class="prev" style="background:#f8f3eb;color:#080331;border-color:#000000">
+      <div class="p-nav"><span style="font-family:'Reckless Neue', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">August Health EHR</span>
+        <i style="background:#4865ff;border-radius:48px"></i></div>
+      <div class="p-body p-centered">
+        <b style="font-family:'Reckless Neue', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">Audits that stop being fire drills</b>
+        <em>Fourteen hundred controls checked continuously — not once a year, the week</em>
+        <i class="p-btn" style="background:#4865ff;border-radius:48px"></i>
+      </div>
+    </div>
+    <div class="strip"><i style="background:#4865ff"></i><i style="background:#080331"></i><i style="background:#1b1463"></i><i style="background:#328a3b"></i><i style="background:#ff6d39"></i><i style="background:#f098d7"></i><i style="background:#ffaefe"></i></div>
+    <div class="meta">
+      <strong>August Health EHR</strong>
+      <span>centered · light · 14 colors</span>
+    </div>
+  </a>
+  <a class="tile" href="./005_leandra_isler.html"
+     data-name="leandra-isler" data-theme="light"
+     data-hero="editorial" data-kind="analytics">
+    <div class="prev" style="background:#f4e6cd;color:#1e211e;border-color:#1e211e">
+      <div class="p-nav"><span style="font-family:'PP Neue Montreal', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">Leandra-isler</span>
+        <i style="background:#ba9d6a;border-radius:50px"></i></div>
+      <div class="p-body p-editorial">
+        <b style="font-family:'PP Neue Montreal', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">Know what changed, and why</b>
+        <em>Query your warehouse directly, define each metric once, and let anyone ans</em>
+        <i class="p-btn" style="background:#ba9d6a;border-radius:50px"></i>
+      </div>
+    </div>
+    <div class="strip"><i style="background:#f4e6cd"></i><i style="background:#edddc3"></i><i style="background:#1e211e"></i><i style="background:#000000"></i><i style="background:#8f774b"></i><i style="background:#ba9d6a"></i><i style="background:#d6bd97"></i></div>
+    <div class="meta">
+      <strong>Leandra-isler</strong>
+      <span>editorial · light · 7 colors</span>
+    </div>
+  </a>
+  <a class="tile" href="./006_audyr.html"
+     data-name="audyr" data-theme="light"
+     data-hero="editorial" data-kind="scheduling">
+    <div class="prev" style="background:#ffffff;color:#111111;border-color:#d9d9d9">
+      <div class="p-nav"><span style="font-family:'Inter', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">Audyr</span>
+        <i style="background:#111111;border-radius:4px"></i></div>
+      <div class="p-body p-editorial">
+        <b style="font-family:'Inter', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">Scheduling without the back and forth</b>
+        <em>Share one link. Everyone sees their own clock, buffers appear automaticall</em>
+        <i class="p-btn" style="background:#111111;border-radius:4px"></i>
+      </div>
+    </div>
+    <div class="strip"><i style="background:#262626"></i><i style="background:#ffffff"></i><i style="background:#ededed"></i><i style="background:#171717"></i><i style="background:#686868"></i><i style="background:#515151"></i><i style="background:#737373"></i></div>
+    <div class="meta">
+      <strong>Audyr</strong>
+      <span>editorial · light · 10 colors</span>
+    </div>
+  </a>
+  <a class="tile" href="./007_atoms.html"
+     data-name="atoms" data-theme="dark"
+     data-hero="centered" data-kind="infra">
+    <div class="prev" style="background:#000000;color:#fff7dd;border-color:#fff7dd">
+      <div class="p-nav"><span style="font-family:'Switzer', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">Atoms</span>
+        <i style="background:#c8ad86;border-radius:100px"></i></div>
+      <div class="p-body p-centered">
+        <b style="font-family:'Switzer', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">Ship to the edge, sleep through the night</b>
+        <em>Thirty regions, sub-40ms cold starts, and autoscaling to zero between requ</em>
+        <i class="p-btn" style="background:#c8ad86;border-radius:100px"></i>
+      </div>
+    </div>
+    <div class="strip"><i style="background:#c8ad86"></i><i style="background:#fff7dd"></i><i style="background:#000000"></i><i style="background:#66635f"></i></div>
+    <div class="meta">
+      <strong>Atoms</strong>
+      <span>centered · dark · 4 colors</span>
+    </div>
+  </a>
+  <a class="tile" href="./008_atlantic_vc.html"
+     data-name="atlantic.vc" data-theme="dark"
+     data-hero="editorial" data-kind="security">
+    <div class="prev" style="background:#000000;color:#d8eaff;border-color:#d8eaff">
+      <div class="p-nav"><span style="font-family:'Monument', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">Atlantic.vc</span>
+        <i style="background:#1f58f2;border-radius:40.798px"></i></div>
+      <div class="p-body p-editorial">
+        <b style="font-family:'Monument', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">Evidence, not assurances</b>
+        <em>Fourteen hundred controls checked continuously — not once a year, the week</em>
+        <i class="p-btn" style="background:#1f58f2;border-radius:40.798px"></i>
+      </div>
+    </div>
+    <div class="strip"><i style="background:#d8eaff"></i><i style="background:#000000"></i><i style="background:#0d0d0f"></i><i style="background:#232529"></i><i style="background:#2b2f33"></i><i style="background:#41464c"></i><i style="background:#565e66"></i></div>
+    <div class="meta">
+      <strong>Atlantic.vc</strong>
+      <span>editorial · dark · 11 colors</span>
+    </div>
+  </a>
+  <a class="tile" href="./009_athletics.html"
+     data-name="athletics" data-theme="dark"
+     data-hero="split" data-kind="scheduling">
+    <div class="prev" style="background:#000000;color:#ffffff;border-color:#d6d5d0">
+      <div class="p-nav"><span style="font-family:'Feature Deck', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">Athletics</span>
+        <i style="background:#ffffff;border-radius:9999px"></i></div>
+      <div class="p-body p-split">
+        <b style="font-family:'Feature Deck', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">No more 4pm Friday calls</b>
+        <em>Availability that respects focus time, time zones and the fact that nobody</em>
+        <i class="p-btn" style="background:#ffffff;border-radius:9999px"></i>
+      </div>
+    </div>
+    <div class="strip"><i style="background:#000000"></i><i style="background:#1d1d1d"></i><i style="background:#ffffff"></i><i style="background:#d6d5d0"></i></div>
+    <div class="meta">
+      <strong>Athletics</strong>
+      <span>split · dark · 4 colors</span>
+    </div>
+  </a>
+  <a class="tile" href="./010_assurestor.html"
+     data-name="assurestor" data-theme="dark"
+     data-hero="split" data-kind="scheduling">
+    <div class="prev" style="background:#203400;color:#ffffff;border-color:#586740">
+      <div class="p-nav"><span style="font-family:'Denim Ink', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">Assurestor</span>
+        <i style="background:#bdff00;border-radius:9999px"></i></div>
+      <div class="p-body p-split">
+        <b style="font-family:'Denim Ink', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">The meeting that books itself</b>
+        <em>Share one link. Everyone sees their own clock, buffers appear automaticall</em>
+        <i class="p-btn" style="background:#bdff00;border-radius:9999px"></i>
+      </div>
+    </div>
+    <div class="strip"><i style="background:#203400"></i><i style="background:#1b2d00"></i><i style="background:#335400"></i><i style="background:#bdff00"></i><i style="background:#586740"></i><i style="background:#73a303"></i><i style="background:#ffffff"></i></div>
+    <div class="meta">
+      <strong>Assurestor</strong>
+      <span>split · dark · 7 colors</span>
+    </div>
+  </a>
+  <a class="tile" href="./011_aspelin_reitan.html"
+     data-name="aspelin reitan" data-theme="light"
+     data-hero="display" data-kind="design">
+    <div class="prev" style="background:#ffebd0;color:#000000;border-color:#000000">
+      <div class="p-nav"><span style="font-family:'ModernEra', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">Aspelin Reitan</span>
+        <i style="background:#2f2116;border-radius:8px"></i></div>
+      <div class="p-body p-display">
+        <b style="font-family:'ModernEra', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">The system behind the system</b>
+        <em>Define tokens once and ship them to every surface — web, native and docs —</em>
+        <i class="p-btn" style="background:#2f2116;border-radius:8px"></i>
+      </div>
+    </div>
+    <div class="strip"><i style="background:#ffebd0"></i><i style="background:#fff8e9"></i><i style="background:#000000"></i><i style="background:#2f2116"></i><i style="background:#4f3622"></i><i style="background:#fee197"></i><i style="background:#987f61"></i></div>
+    <div class="meta">
+      <strong>Aspelin Reitan</strong>
+      <span>display · light · 7 colors</span>
+    </div>
+  </a>
+  <a class="tile" href="./012_atelier_deux_c.html"
+     data-name="atelier deux-cé" data-theme="light"
+     data-hero="editorial" data-kind="analytics">
+    <div class="prev" style="background:#ffffff;color:#000000;border-color:#000000">
+      <div class="p-nav"><span style="font-family:'Helvetica', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">Atelier Deux-Cé</span>
+        <i style="background:#259558;border-radius:0px"></i></div>
+      <div class="p-body p-editorial">
+        <b style="font-family:'Helvetica', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">From question to answer, without a ticket</b>
+        <em>Governed metrics, self-serve exploration, and alerts that page the person </em>
+        <i class="p-btn" style="background:#259558;border-radius:0px"></i>
+      </div>
+    </div>
+    <div class="strip"><i style="background:#000000"></i><i style="background:#ffffff"></i><i style="background:#eee5da"></i><i style="background:#d8ddc6"></i><i style="background:#d8d0c5"></i><i style="background:#afb371"></i><i style="background:#9c978a"></i></div>
+    <div class="meta">
+      <strong>Atelier Deux-Cé</strong>
+      <span>editorial · light · 9 colors</span>
+    </div>
+  </a>
+  <a class="tile" href="./013_ashton_bespoke.html"
+     data-name="ashton bespoke" data-theme="light"
+     data-hero="display" data-kind="security">
+    <div class="prev" style="background:#e0ded8;color:#262626;border-color:#262626">
+      <div class="p-nav"><span style="font-family:'Arial', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">Ashton Bespoke</span>
+        <i style="background:#38141b;border-radius:4px"></i></div>
+      <div class="p-body p-display">
+        <b style="font-family:'Arial', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">Compliance without the scramble</b>
+        <em>Policies as code, evidence gathered on schedule, and an audit package your</em>
+        <i class="p-btn" style="background:#38141b;border-radius:4px"></i>
+      </div>
+    </div>
+    <div class="strip"><i style="background:#38141b"></i><i style="background:#262626"></i><i style="background:#e0ded8"></i><i style="background:#ffffff"></i></div>
+    <div class="meta">
+      <strong>Ashton Bespoke</strong>
+      <span>display · light · 4 colors</span>
+    </div>
+  </a>
+  <a class="tile" href="./014_arva.html"
+     data-name="arva" data-theme="light"
+     data-hero="display" data-kind="security">
+    <div class="prev" style="background:#f1efdf;color:#212529;border-color:#c3cda7">
+      <div class="p-nav"><span style="font-family:'Inter', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">Arva</span>
+        <i style="background:#07503f;border-radius:60px"></i></div>
+      <div class="p-body p-display">
+        <b style="font-family:'Inter', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">See the blast radius before it happens</b>
+        <em>Continuous control monitoring with evidence collected automatically, so au</em>
+        <i class="p-btn" style="background:#07503f;border-radius:60px"></i>
+      </div>
+    </div>
+    <div class="strip"><i style="background:#07503f"></i><i style="background:#e8fe85"></i><i style="background:#f1efdf"></i><i style="background:#ffffff"></i><i style="background:#efefef"></i><i style="background:#212529"></i><i style="background:#353535"></i></div>
+    <div class="meta">
+      <strong>Arva</strong>
+      <span>display · light · 12 colors</span>
+    </div>
+  </a>
+  <a class="tile" href="./015_artu.html"
+     data-name="artu" data-theme="light"
+     data-hero="display" data-kind="security">
+    <div class="prev" style="background:#ffffff;color:#000000;border-color:#000000">
+      <div class="p-nav"><span style="font-family:'HelveticaNeuePro', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">ARTU</span>
+        <i style="background:#ff1313;border-radius:0px"></i></div>
+      <div class="p-body p-display">
+        <b style="font-family:'HelveticaNeuePro', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">Proof on demand</b>
+        <em>Continuous control monitoring with evidence collected automatically, so au</em>
+        <i class="p-btn" style="background:#ff1313;border-radius:0px"></i>
+      </div>
+    </div>
+    <div class="strip"><i style="background:#ffffff"></i><i style="background:#000000"></i><i style="background:#d7ff66"></i><i style="background:#ff1313"></i></div>
+    <div class="meta">
+      <strong>ARTU</strong>
+      <span>display · light · 4 colors</span>
+    </div>
+  </a>
+  <a class="tile" href="./016_arte.html"
+     data-name="arte*" data-theme="light"
+     data-hero="display" data-kind="analytics">
+    <div class="prev" style="background:#e5dccd;color:#111111;border-color:#ab5700">
+      <div class="p-nav"><span style="font-family:'Poppins', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">arte*</span>
+        <i style="background:#ab5700;border-radius:64px"></i></div>
+      <div class="p-body p-display">
+        <b style="font-family:'Poppins', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">Metrics that mean the same thing twice</b>
+        <em>Governed metrics, self-serve exploration, and alerts that page the person </em>
+        <i class="p-btn" style="background:#ab5700;border-radius:64px"></i>
+      </div>
+    </div>
+    <div class="strip"><i style="background:#e5dccd"></i><i style="background:#ab5700"></i><i style="background:#e8e359"></i><i style="background:#7997ff"></i><i style="background:#d99623"></i><i style="background:#214534"></i><i style="background:#103d26"></i></div>
+    <div class="meta">
+      <strong>arte*</strong>
+      <span>display · light · 10 colors</span>
+    </div>
+  </a>
+  <a class="tile" href="./017_artandcommerce.html"
+     data-name="artandcommerce" data-theme="light"
+     data-hero="display" data-kind="payments">
+    <div class="prev" style="background:#e7e7e7;color:#000000;border-color:#000000">
+      <div class="p-nav"><span style="font-family:'Adobe Garamond', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">Artandcommerce</span>
+        <i style="background:#121212;border-radius:0px"></i></div>
+      <div class="p-body p-display">
+        <b style="font-family:'Adobe Garamond', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">Billing that survives contact with reality</b>
+        <em>Take payments in 40 markets on local rails, and close the books without a </em>
+        <i class="p-btn" style="background:#121212;border-radius:0px"></i>
+      </div>
+    </div>
+    <div class="strip"><i style="background:#000000"></i><i style="background:#e7e7e7"></i><i style="background:#121212"></i></div>
+    <div class="meta">
+      <strong>Artandcommerce</strong>
+      <span>display · light · 3 colors</span>
+    </div>
+  </a>
+  <a class="tile" href="./018_area_17.html"
+     data-name="area 17" data-theme="light"
+     data-hero="display" data-kind="design">
+    <div class="prev" style="background:#ffffff;color:#1a1a1a;border-color:#e6e6e6">
+      <div class="p-nav"><span style="font-family:'ui-sans-serif', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">AREA 17</span>
+        <i style="background:#1a1a1a;border-radius:9999px"></i></div>
+      <div class="p-body p-display">
+        <b style="font-family:'ui-sans-serif', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">One source, every surface</b>
+        <em>Author your design language once; publish it to CSS, Swift, Compose and Fi</em>
+        <i class="p-btn" style="background:#1a1a1a;border-radius:9999px"></i>
+      </div>
+    </div>
+    <div class="strip"><i style="background:#ffffff"></i><i style="background:#1a1a1a"></i><i style="background:#000000"></i><i style="background:#e6e6e6"></i><i style="background:#f2f2f2"></i><i style="background:#f2ede9"></i><i style="background:#949494"></i></div>
+    <div class="meta">
+      <strong>AREA 17</strong>
+      <span>display · light · 10 colors</span>
+    </div>
+  </a>
+  <a class="tile" href="./019_arsenijs_fabrica.html"
+     data-name="arsenijs fabrica" data-theme="light"
+     data-hero="editorial" data-kind="design">
+    <div class="prev" style="background:#ffffff;color:#111111;border-color:#111111">
+      <div class="p-nav"><span style="font-family:'Onest', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">Arsenijs Fabrica</span>
+        <i style="background:#ff8562;border-radius:55px"></i></div>
+      <div class="p-body p-editorial">
+        <b style="font-family:'Onest', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">Design decisions that survive handoff</b>
+        <em>Define tokens once and ship them to every surface — web, native and docs —</em>
+        <i class="p-btn" style="background:#f15730;border-radius:55px"></i>
+      </div>
+    </div>
+    <div class="strip"><i style="background:#f15730"></i><i style="background:#f7651a"></i><i style="background:#ff8562"></i><i style="background:#111111"></i><i style="background:#0d1717"></i><i style="background:#ffffff"></i><i style="background:#eeeeee"></i></div>
+    <div class="meta">
+      <strong>Arsenijs Fabrica</strong>
+      <span>editorial · light · 8 colors</span>
+    </div>
+  </a>
+  <a class="tile" href="./020_the1.html"
+     data-name="the1" data-theme="light"
+     data-hero="centered-panel" data-kind="infra">
+    <div class="prev" style="background:#d9d9d9;color:#1f1f1f;border-color:#1f1f1f">
+      <div class="p-nav"><span style="font-family:'KH Teka', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">The1</span>
+        <i style="background:#fa4d43;border-radius:100px"></i></div>
+      <div class="p-body p-centered-panel">
+        <b style="font-family:'KH Teka', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">Infrastructure that gets out of the way</b>
+        <em>Thirty regions, sub-40ms cold starts, and autoscaling to zero between requ</em>
+        <i class="p-btn" style="background:#1f1f1f;border-radius:100px"></i>
+      </div>
+    </div>
+    <div class="strip"><i style="background:#027b49"></i><i style="background:#f19ec8"></i><i style="background:#fa4d43"></i><i style="background:#fbb833"></i><i style="background:#d9d9d9"></i><i style="background:#1f1f1f"></i><i style="background:#000000"></i></div>
+    <div class="meta">
+      <strong>The1</strong>
+      <span>centered-panel · light · 7 colors</span>
+    </div>
+  </a>
+  <a class="tile" href="./021_aqua_voice.html"
+     data-name="aqua voice" data-theme="light"
+     data-hero="split" data-kind="crm">
+    <div class="prev" style="background:#fafbfc;color:#292c3d;border-color:#e5e8ec">
+      <div class="p-nav"><span style="font-family:'sans-serif', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">Aqua Voice</span>
+        <i style="background:#67beff;border-radius:50px"></i></div>
+      <div class="p-body p-split">
+        <b style="font-family:'sans-serif', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">The CRM your reps stop avoiding</b>
+        <em>A customer record that updates itself from the tools your team already liv</em>
+        <i class="p-btn" style="background:#67beff;border-radius:50px"></i>
+      </div>
+    </div>
+    <div class="strip"><i style="background:#67beff"></i><i style="background:#4288ff"></i><i style="background:#fafbfc"></i><i style="background:#f3f7fa"></i><i style="background:#f2f6fa"></i><i style="background:#e5e8ec"></i><i style="background:#efefef"></i></div>
+    <div class="meta">
+      <strong>Aqua Voice</strong>
+      <span>split · light · 14 colors</span>
+    </div>
+  </a>
+  <a class="tile" href="./022_arc.html"
+     data-name="arc" data-theme="light"
+     data-hero="display" data-kind="security">
+    <div class="prev" style="background:#ffffff;color:#0a0a0a;border-color:#e5e7eb">
+      <div class="p-nav"><span style="font-family:'Soehne', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">Arc</span>
+        <i style="background:#031e25;border-radius:5px"></i></div>
+      <div class="p-body p-display">
+        <b style="font-family:'Soehne', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">Evidence, not assurances</b>
+        <em>Fourteen hundred controls checked continuously — not once a year, the week</em>
+        <i class="p-btn" style="background:#031e25;border-radius:5px"></i>
+      </div>
+    </div>
+    <div class="strip"><i style="background:#e5e7eb"></i><i style="background:#0a0a0a"></i><i style="background:#ffffff"></i><i style="background:#000000"></i><i style="background:#031e25"></i><i style="background:#1d1d1e"></i></div>
+    <div class="meta">
+      <strong>Arc</strong>
+      <span>display · light · 6 colors</span>
+    </div>
+  </a>
+  <a class="tile" href="./023_cqcm.html"
+     data-name="cqcm" data-theme="light"
+     data-hero="centered" data-kind="scheduling">
+    <div class="prev" style="background:#ffffff;color:#000000;border-color:#000000">
+      <div class="p-nav"><span style="font-family:'Athletics', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">CQCM</span>
+        <i style="background:#44d991;border-radius:100px"></i></div>
+      <div class="p-body p-centered">
+        <b style="font-family:'Athletics', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">Find the time, skip the thread</b>
+        <em>Availability that respects focus time, time zones and the fact that nobody</em>
+        <i class="p-btn" style="background:#000000;border-radius:100px"></i>
+      </div>
+    </div>
+    <div class="strip"><i style="background:#44d991"></i><i style="background:#4c92e9"></i><i style="background:#ff6a51"></i><i style="background:#eaf9f2"></i><i style="background:#000000"></i><i style="background:#ffffff"></i><i style="background:#666666"></i></div>
+    <div class="meta">
+      <strong>CQCM</strong>
+      <span>centered · light · 7 colors</span>
+    </div>
+  </a>
+  <a class="tile" href="./024_aptos_network.html"
+     data-name="aptos network" data-theme="light"
+     data-hero="centered" data-kind="infra">
+    <div class="prev" style="background:#f9f9f0;color:#0f0e0b;border-color:#0f0e0b">
+      <div class="p-nav"><span style="font-family:'Season Serif', ui-serif, Georgia, Cambria, "Times New Roman", Times, serif">Aptos Network</span>
+        <i style="background:#ccc5a3;border-radius:9999px"></i></div>
+      <div class="p-body p-centered">
+        <b style="font-family:'Season Serif', ui-serif, Georgia, Cambria, "Times New Roman", Times, serif">Global by default, simple on purpose</b>
+        <em>Thirty regions, sub-40ms cold starts, and autoscaling to zero between requ</em>
+        <i class="p-btn" style="background:#21201c;border-radius:9999px"></i>
+      </div>
+    </div>
+    <div class="strip"><i style="background:#0f0e0b"></i><i style="background:#f9f9f0"></i><i style="background:#6d6c67"></i><i style="background:#21201c"></i><i style="background:#555450"></i><i style="background:#84837d"></i><i style="background:#3d3b34"></i></div>
+    <div class="meta">
+      <strong>Aptos Network</strong>
+      <span>centered · light · 11 colors</span>
+    </div>
+  </a>
+  <a class="tile" href="./025_applied_labs.html"
+     data-name="applied labs" data-theme="light"
+     data-hero="editorial" data-kind="analytics">
+    <div class="prev" style="background:#ffffff;color:#09090b;border-color:#e4e4e7">
+      <div class="p-nav"><span style="font-family:'Geist', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">Applied Labs</span>
+        <i style="background:#0051ff;border-radius:99px"></i></div>
+      <div class="p-body p-editorial">
+        <b style="font-family:'Geist', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">Every number, one source of truth</b>
+        <em>Query your warehouse directly, define each metric once, and let anyone ans</em>
+        <i class="p-btn" style="background:#0051ff;border-radius:99px"></i>
+      </div>
+    </div>
+    <div class="strip"><i style="background:#ffffff"></i><i style="background:#f7f7f4"></i><i style="background:#f5f5f5"></i><i style="background:#e4e4e7"></i><i style="background:#8c8c8c"></i><i style="background:#737373"></i><i style="background:#666666"></i></div>
+    <div class="meta">
+      <strong>Applied Labs</strong>
+      <span>editorial · light · 17 colors</span>
+    </div>
+  </a>
+  <a class="tile" href="./026_apple_espa_a.html"
+     data-name="apple (españa)" data-theme="mixed"
+     data-hero="editorial" data-kind="crm">
+    <div class="prev" style="background:#000000;color:#f5f5f7;border-color:#333336">
+      <div class="p-nav"><span style="font-family:'SF Pro Display', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">Apple (España)</span>
+        <i style="background:#f56900;border-radius:980px"></i></div>
+      <div class="p-body p-editorial">
+        <b style="font-family:'SF Pro Display', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">Know where every deal actually stands</b>
+        <em>Every email, call and ticket on one timeline, with automations you can rea</em>
+        <i class="p-btn" style="background:#0071e3;border-radius:980px"></i>
+      </div>
+    </div>
+    <div class="strip"><i style="background:#1d1d1f"></i><i style="background:#f5f5f7"></i><i style="background:#000000"></i><i style="background:#ffffff"></i><i style="background:#111111"></i><i style="background:#86868b"></i><i style="background:#333336"></i></div>
+    <div class="meta">
+      <strong>Apple (España)</strong>
+      <span>editorial · mixed · 15 colors</span>
+    </div>
+  </a>
+  <a class="tile" href="./027_apple_espa_a.html"
+     data-name="apple (españa)" data-theme="light"
+     data-hero="split" data-kind="content">
+    <div class="prev" style="background:#ffffff;color:#1d1d1f;border-color:#1d1d1f">
+      <div class="p-nav"><span style="font-family:'SF Pro Display', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">Apple (España)</span>
+        <i style="background:#03aa49;border-radius:980px"></i></div>
+      <div class="p-body p-split">
+        <b style="font-family:'SF Pro Display', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">Write once, render anywhere</b>
+        <em>Localize per field, preview the real page, and invalidate the edge cache t</em>
+        <i class="p-btn" style="background:#0071e3;border-radius:980px"></i>
+      </div>
+    </div>
+    <div class="strip"><i style="background:#f5f5f7"></i><i style="background:#ffffff"></i><i style="background:#1d1d1f"></i><i style="background:#707070"></i><i style="background:#474747"></i><i style="background:#333336"></i><i style="background:#e2e2e5"></i></div>
+    <div class="meta">
+      <strong>Apple (España)</strong>
+      <span>split · light · 16 colors</span>
+    </div>
+  </a>
+  <a class="tile" href="./028_apollo.html"
+     data-name="apollo" data-theme="light"
+     data-hero="centered-panel" data-kind="crm">
+    <div class="prev" style="background:#f9f8f0;color:#3c261c;border-color:#dddedf">
+      <div class="p-nav"><span style="font-family:'MonaSans', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">Apollo</span>
+        <i style="background:#e97451;border-radius:3px"></i></div>
+      <div class="p-body p-centered-panel">
+        <b style="font-family:'MonaSans', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">Your pipeline, finally legible</b>
+        <em>Every email, call and ticket on one timeline, with automations you can rea</em>
+        <i class="p-btn" style="background:#e97451;border-radius:3px"></i>
+      </div>
+    </div>
+    <div class="strip"><i style="background:#3c261c"></i><i style="background:#e97451"></i><i style="background:#4a43dd"></i><i style="background:#f7efc5"></i><i style="background:#f9f8f0"></i><i style="background:#dddedf"></i><i style="background:#fcede8"></i></div>
+    <div class="meta">
+      <strong>Apollo</strong>
+      <span>centered-panel · light · 9 colors</span>
+    </div>
+  </a>
+  <a class="tile" href="./029_apple_espa_a.html"
+     data-name="apple (españa)" data-theme="light"
+     data-hero="split" data-kind="payments">
+    <div class="prev" style="background:#f5f5f7;color:#1d1d1f;border-color:#d6d6d6">
+      <div class="p-nav"><span style="font-family:'SF Pro Display', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">Apple (España)</span>
+        <i style="background:#0071e3;border-radius:980px"></i></div>
+      <div class="p-body p-split">
+        <b style="font-family:'SF Pro Display', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">Payments infrastructure, minus the plumbing</b>
+        <em>Take payments in 40 markets on local rails, and close the books without a </em>
+        <i class="p-btn" style="background:#0071e3;border-radius:980px"></i>
+      </div>
+    </div>
+    <div class="strip"><i style="background:#0071e3"></i><i style="background:#0066cc"></i><i style="background:#03aa49"></i><i style="background:#ed6300"></i><i style="background:#8668ff"></i><i style="background:#00a1b3"></i><i style="background:#1d1d1f"></i></div>
+    <div class="meta">
+      <strong>Apple (España)</strong>
+      <span>split · light · 16 colors</span>
+    </div>
+  </a>
+  <a class="tile" href="./030_anuc_home.html"
+     data-name="anuc home" data-theme="light"
+     data-hero="display" data-kind="scheduling">
+    <div class="prev" style="background:#ffffff;color:#111111;border-color:#d9d9d9">
+      <div class="p-nav"><span style="font-family:'Instrument Sans', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">Anuc Home</span>
+        <i style="background:#9a682c;border-radius:0px"></i></div>
+      <div class="p-body p-display">
+        <b style="font-family:'Instrument Sans', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">Booking, reduced to one link</b>
+        <em>Availability that respects focus time, time zones and the fact that nobody</em>
+        <i class="p-btn" style="background:#9a682c;border-radius:0px"></i>
+      </div>
+    </div>
+    <div class="strip"><i style="background:#1a1a1e"></i><i style="background:#f3f3f2"></i><i style="background:#ffffff"></i><i style="background:#d1d1d2"></i><i style="background:#c1c2bd"></i><i style="background:#e7e6e4"></i><i style="background:#4d4942"></i></div>
+    <div class="meta">
+      <strong>Anuc Home</strong>
+      <span>display · light · 10 colors</span>
+    </div>
+  </a>
+  <a class="tile" href="./031_ankar_ai.html"
+     data-name="ankar ai" data-theme="light"
+     data-hero="editorial" data-kind="crm">
+    <div class="prev" style="background:#ffffff;color:#171717;border-color:#000000">
+      <div class="p-nav"><span style="font-family:'Switzer Variable', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">Ankar AI</span>
+        <i style="background:#000000;border-radius:100px"></i></div>
+      <div class="p-body p-editorial">
+        <b style="font-family:'Switzer Variable', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">The CRM your reps stop avoiding</b>
+        <em>A customer record that updates itself from the tools your team already liv</em>
+        <i class="p-btn" style="background:#171717;border-radius:100px"></i>
+      </div>
+    </div>
+    <div class="strip"><i style="background:#000000"></i><i style="background:#ffffff"></i><i style="background:#171717"></i><i style="background:#1f1f1f"></i><i style="background:#515151"></i><i style="background:#979797"></i><i style="background:#b9b9b9"></i></div>
+    <div class="meta">
+      <strong>Ankar AI</strong>
+      <span>editorial · light · 9 colors</span>
+    </div>
+  </a>
+  <a class="tile" href="./032_andr_c_ndido.html"
+     data-name="andré cândido" data-theme="light"
+     data-hero="editorial" data-kind="infra">
+    <div class="prev" style="background:#ffffff;color:#000000;border-color:#d6d6d6">
+      <div class="p-nav"><span style="font-family:'PP Mori', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">André Cândido</span>
+        <i style="background:#111118;border-radius:50px"></i></div>
+      <div class="p-body p-editorial">
+        <b style="font-family:'PP Mori', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">Global by default, simple on purpose</b>
+        <em>Push a branch, get an environment. Merge it, and it disappears. Roll back </em>
+        <i class="p-btn" style="background:#111118;border-radius:50px"></i>
+      </div>
+    </div>
+    <div class="strip"><i style="background:#111118"></i><i style="background:#ffffff"></i><i style="background:#dddddd"></i><i style="background:#bdbdbd"></i><i style="background:#7c7c7c"></i><i style="background:#333333"></i><i style="background:#000000"></i></div>
+    <div class="meta">
+      <strong>André Cândido</strong>
+      <span>editorial · light · 9 colors</span>
+    </div>
+  </a>
+  <a class="tile" href="./033_andercore.html"
+     data-name="andercore" data-theme="dark"
+     data-hero="display" data-kind="analytics">
+    <div class="prev" style="background:#0b0405;color:#ffffff;border-color:#382e30">
+      <div class="p-nav"><span style="font-family:'Archivo', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">Andercore</span>
+        <i style="background:#e32735;border-radius:4px"></i></div>
+      <div class="p-body p-display">
+        <b style="font-family:'Archivo', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">Metrics that mean the same thing twice</b>
+        <em>Warehouse-native dashboards your whole team can read, without waiting on a</em>
+        <i class="p-btn" style="background:#e32735;border-radius:4px"></i>
+      </div>
+    </div>
+    <div class="strip"><i style="background:#e32735"></i><i style="background:#0b0405"></i><i style="background:#150e0f"></i><i style="background:#382e30"></i><i style="background:#858182"></i><i style="background:#ffffff"></i><i style="background:#000000"></i></div>
+    <div class="meta">
+      <strong>Andercore</strong>
+      <span>display · dark · 7 colors</span>
+    </div>
+  </a>
+  <a class="tile" href="./034_analogue_af_1.html"
+     data-name="analogue af-1" data-theme="light"
+     data-hero="display" data-kind="design">
+    <div class="prev" style="background:#ffffff;color:#171717;border-color:#ededed">
+      <div class="p-nav"><span style="font-family:'ITC Garamond Std Light Narrow', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">Analogue aF-1</span>
+        <i style="background:#002fff;border-radius:100px"></i></div>
+      <div class="p-body p-display">
+        <b style="font-family:'ITC Garamond Std Light Narrow', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">From token to production, one hop</b>
+        <em>Define tokens once and ship them to every surface — web, native and docs —</em>
+        <i class="p-btn" style="background:#002fff;border-radius:100px"></i>
+      </div>
+    </div>
+    <div class="strip"><i style="background:#002fff"></i><i style="background:#ffffff"></i><i style="background:#171717"></i><i style="background:#070707"></i><i style="background:#000000"></i><i style="background:#ededed"></i><i style="background:#b9b9b9"></i></div>
+    <div class="meta">
+      <strong>Analogue aF-1</strong>
+      <span>display · light · 9 colors</span>
+    </div>
+  </a>
+  <a class="tile" href="./035_andrei_rybin.html"
+     data-name="andrei rybin" data-theme="light"
+     data-hero="centered-panel" data-kind="analytics">
+    <div class="prev" style="background:#ffffff;color:#000000;border-color:#858585">
+      <div class="p-nav"><span style="font-family:'sans-serif', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">Andrei Rybin</span>
+        <i style="background:#858585;border-radius:9999px"></i></div>
+      <div class="p-body p-centered-panel">
+        <b style="font-family:'sans-serif', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">The dashboard your team actually opens</b>
+        <em>Warehouse-native dashboards your whole team can read, without waiting on a</em>
+        <i class="p-btn" style="background:#858585;border-radius:9999px"></i>
+      </div>
+    </div>
+    <div class="strip"><i style="background:#ffffff"></i><i style="background:#000000"></i><i style="background:#858585"></i><i style="background:#8e8e90"></i></div>
+    <div class="meta">
+      <strong>Andrei Rybin</strong>
+      <span>centered-panel · light · 4 colors</span>
+    </div>
+  </a>
+  <a class="tile" href="./036_amp.html"
+     data-name="amp" data-theme="light"
+     data-hero="editorial" data-kind="analytics">
+    <div class="prev" style="background:#ffffff;color:#0a0a0a;border-color:#e5e5e5">
+      <div class="p-nav"><span style="font-family:'PublicaSans', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">amp</span>
+        <i style="background:#ff6105;border-radius:50px"></i></div>
+      <div class="p-body p-editorial">
+        <b style="font-family:'PublicaSans', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">The dashboard your team actually opens</b>
+        <em>Warehouse-native dashboards your whole team can read, without waiting on a</em>
+        <i class="p-btn" style="background:#ff6105;border-radius:50px"></i>
+      </div>
+    </div>
+    <div class="strip"><i style="background:#ff6105"></i><i style="background:#ffa069"></i><i style="background:#ffdfcd"></i><i style="background:#0a0a0a"></i><i style="background:#292b2a"></i><i style="background:#7a7b7b"></i><i style="background:#a2a3a2"></i></div>
+    <div class="meta">
+      <strong>amp</strong>
+      <span>editorial · light · 14 colors</span>
+    </div>
+  </a>
+  <a class="tile" href="./037_amrit_palace.html"
+     data-name="amrit palace" data-theme="light"
+     data-hero="editorial" data-kind="content">
+    <div class="prev" style="background:#d8cbb8;color:#111111;border-color:#b8ad9d">
+      <div class="p-nav"><span style="font-family:'TT Ramillas Variable', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">Amrit Palace</span>
+        <i style="background:#111111;border-radius:3px"></i></div>
+      <div class="p-body p-editorial">
+        <b style="font-family:'TT Ramillas Variable', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">From draft to edge in one click</b>
+        <em>A structured editor and a delivery API, so content moves without a deploy </em>
+        <i class="p-btn" style="background:#111111;border-radius:3px"></i>
+      </div>
+    </div>
+    <div class="strip"><i style="background:#d8cbb8"></i><i style="background:#bfb4a3"></i><i style="background:#b6ab9c"></i><i style="background:#978e81"></i><i style="background:#615b53"></i><i style="background:#2c2c2c"></i><i style="background:#292622"></i></div>
+    <div class="meta">
+      <strong>Amrit Palace</strong>
+      <span>editorial · light · 8 colors</span>
+    </div>
+  </a>
+  <a class="tile" href="./038_ameba.html"
+     data-name="ameba" data-theme="dark"
+     data-hero="editorial" data-kind="analytics">
+    <div class="prev" style="background:#ffffff;color:#6b6b83;border-color:#dbdcdf">
+      <div class="p-nav"><span style="font-family:'Open Suace Sans Regular', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">Ameba</span>
+        <i style="background:#00052e;border-radius:8px"></i></div>
+      <div class="p-body p-editorial">
+        <b style="font-family:'Open Suace Sans Regular', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">Know what changed, and why</b>
+        <em>Warehouse-native dashboards your whole team can read, without waiting on a</em>
+        <i class="p-btn" style="background:#00052e;border-radius:8px"></i>
+      </div>
+    </div>
+    <div class="strip"><i style="background:#00052e"></i><i style="background:#0428cb"></i><i style="background:#34fcff"></i><i style="background:#afb4db"></i><i style="background:#222222"></i><i style="background:#4f5166"></i><i style="background:#6b6b83"></i></div>
+    <div class="meta">
+      <strong>Ameba</strong>
+      <span>editorial · dark · 10 colors</span>
+    </div>
+  </a>
+  <a class="tile" href="./039_ambrook.html"
+     data-name="ambrook" data-theme="light"
+     data-hero="editorial" data-kind="scheduling">
+    <div class="prev" style="background:#fcfaf1;color:#211b15;border-color:#efe9e0">
+      <div class="p-nav"><span style="font-family:'Lateral', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">Ambrook</span>
+        <i style="background:#e8b672;border-radius:9999px"></i></div>
+      <div class="p-body p-editorial">
+        <b style="font-family:'Lateral', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">No more 4pm Friday calls</b>
+        <em>Availability that respects focus time, time zones and the fact that nobody</em>
+        <i class="p-btn" style="background:#e8b672;border-radius:9999px"></i>
+      </div>
+    </div>
+    <div class="strip"><i style="background:#fcfaf1"></i><i style="background:#efe9e0"></i><i style="background:#ffffff"></i><i style="background:#c7bcaf"></i><i style="background:#96897b"></i><i style="background:#50463c"></i><i style="background:#211b15"></i></div>
+    <div class="meta">
+      <strong>Ambrook</strong>
+      <span>editorial · light · 12 colors</span>
+    </div>
+  </a>
+  <a class="tile" href="./040_amaterasu.html"
+     data-name="amaterasu" data-theme="dark"
+     data-hero="editorial" data-kind="analytics">
+    <div class="prev" style="background:#000000;color:#ffffff;border-color:#292929">
+      <div class="p-nav"><span style="font-family:'TWKLausanne-250', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">Amaterasu</span>
+        <i style="background:#1b2978;border-radius:20px"></i></div>
+      <div class="p-body p-editorial">
+        <b style="font-family:'TWKLausanne-250', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">Your data, finally on speaking terms</b>
+        <em>Governed metrics, self-serve exploration, and alerts that page the person </em>
+        <i class="p-btn" style="background:#1b2978;border-radius:20px"></i>
+      </div>
+    </div>
+    <div class="strip"><i style="background:#1b2978"></i><i style="background:#19366c"></i><i style="background:#75cdd6"></i><i style="background:#ffffff"></i><i style="background:#000000"></i><i style="background:#7488a5"></i><i style="background:#579dc0"></i></div>
+    <div class="meta">
+      <strong>Amaterasu</strong>
+      <span>editorial · dark · 8 colors</span>
+    </div>
+  </a>
+  <a class="tile" href="./041_alveos_one.html"
+     data-name="alveos one" data-theme="light"
+     data-hero="split" data-kind="payments">
+    <div class="prev" style="background:#fcf9f7;color:#000000;border-color:#d1cfcd">
+      <div class="p-nav"><span style="font-family:'sans-serif', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">Alveos One</span>
+        <i style="background:#030f1c;border-radius:100px"></i></div>
+      <div class="p-body p-split">
+        <b style="font-family:'sans-serif', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">Revenue that reconciles itself</b>
+        <em>Usage billing, retries and payouts on a double-entry ledger you can audit </em>
+        <i class="p-btn" style="background:#05060b;border-radius:100px"></i>
+      </div>
+    </div>
+    <div class="strip"><i style="background:#fcf9f7"></i><i style="background:#ffffff"></i><i style="background:#000000"></i><i style="background:#05060b"></i><i style="background:#030f1c"></i><i style="background:#1d1d1d"></i><i style="background:#262628"></i></div>
+    <div class="meta">
+      <strong>Alveos One</strong>
+      <span>split · light · 15 colors</span>
+    </div>
+  </a>
+  <a class="tile" href="./042_altitude.html"
+     data-name="altitude" data-theme="dark"
+     data-hero="editorial" data-kind="scheduling">
+    <div class="prev" style="background:#181818;color:#eeeeee;border-color:#262626">
+      <div class="p-nav"><span style="font-family:'Libre Baskerville', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">Altitude</span>
+        <i style="background:#2b7fff;border-radius:4px"></i></div>
+      <div class="p-body p-editorial">
+        <b style="font-family:'Libre Baskerville', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">The meeting that books itself</b>
+        <em>Share one link. Everyone sees their own clock, buffers appear automaticall</em>
+        <i class="p-btn" style="background:#2b7fff;border-radius:4px"></i>
+      </div>
+    </div>
+    <div class="strip"><i style="background:#181818"></i><i style="background:#111111"></i><i style="background:#1f1f1f"></i><i style="background:#262626"></i><i style="background:#323232"></i><i style="background:#eeeeee"></i><i style="background:#e4e4e4"></i></div>
+    <div class="meta">
+      <strong>Altitude</strong>
+      <span>editorial · dark · 13 colors</span>
+    </div>
+  </a>
+  <a class="tile" href="./043_altius.html"
+     data-name="altius" data-theme="dark"
+     data-hero="centered" data-kind="infra">
+    <div class="prev" style="background:#190501;color:#f7f6ff;border-color:#3d2c2a">
+      <div class="p-nav"><span style="font-family:'Matter', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">Altius</span>
+        <i style="background:#fa5838;border-radius:4px"></i></div>
+      <div class="p-body p-centered">
+        <b style="font-family:'Matter', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">Global by default, simple on purpose</b>
+        <em>Global runtime with instant rollbacks, preview environments per branch, an</em>
+        <i class="p-btn" style="background:#951c04;border-radius:4px"></i>
+      </div>
+    </div>
+    <div class="strip"><i style="background:#190501"></i><i style="background:#340a01"></i><i style="background:#631303"></i><i style="background:#951c04"></i><i style="background:#fa5838"></i><i style="background:#fcac9c"></i><i style="background:#feeae6"></i></div>
+    <div class="meta">
+      <strong>Altius</strong>
+      <span>centered · dark · 11 colors</span>
+    </div>
+  </a>
+  <a class="tile" href="./044_altitude_beverages.html"
+     data-name="altitude beverages" data-theme="mixed"
+     data-hero="editorial" data-kind="content">
+    <div class="prev" style="background:#fafafa;color:#07060b;border-color:#cdcdce">
+      <div class="p-nav"><span style="font-family:'HelveticaNowDisplay', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">Altitude Beverages</span>
+        <i style="background:#07060b;border-radius:100px"></i></div>
+      <div class="p-body p-editorial">
+        <b style="font-family:'HelveticaNowDisplay', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">Publishing without the bottleneck</b>
+        <em>Blocks with real schemas, workflows with real owners, and publishing that </em>
+        <i class="p-btn" style="background:#07060b;border-radius:100px"></i>
+      </div>
+    </div>
+    <div class="strip"><i style="background:#fafafa"></i><i style="background:#d9d9d9"></i><i style="background:#cdcdce"></i><i style="background:#07060b"></i><i style="background:#000000"></i><i style="background:#ddfcff"></i></div>
+    <div class="meta">
+      <strong>Altitude Beverages</strong>
+      <span>editorial · mixed · 6 colors</span>
+    </div>
+  </a>
+  <a class="tile" href="./045_also.html"
+     data-name="also" data-theme="light"
+     data-hero="display" data-kind="scheduling">
+    <div class="prev" style="background:#fcf7fa;color:#000000;border-color:#000000">
+      <div class="p-nav"><span style="font-family:'ABCCameraPlainVariable', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">ALSO</span>
+        <i style="background:#ac74fc;border-radius:56px"></i></div>
+      <div class="p-body p-display">
+        <b style="font-family:'ABCCameraPlainVariable', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">No more 4pm Friday calls</b>
+        <em>Round-robin that distributes fairly, reminders on the channel each person </em>
+        <i class="p-btn" style="background:#c181ff;border-radius:56px"></i>
+      </div>
+    </div>
+    <div class="strip"><i style="background:#fcf7fa"></i><i style="background:#ffffff"></i><i style="background:#f1f1f1"></i><i style="background:#000000"></i><i style="background:#212121"></i><i style="background:#1a1a1a"></i><i style="background:#ac74fc"></i></div>
+    <div class="meta">
+      <strong>ALSO</strong>
+      <span>display · light · 12 colors</span>
+    </div>
+  </a>
+  <a class="tile" href="./046_alpine_hearing_protection.html"
+     data-name="alpine hearing protection" data-theme="light"
+     data-hero="editorial" data-kind="analytics">
+    <div class="prev" style="background:#ffffff;color:#200e0e;border-color:#200e0e">
+      <div class="p-nav"><span style="font-family:'Antarctica', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">Alpine Hearing Protection</span>
+        <i style="background:#ed212d;border-radius:2.23px"></i></div>
+      <div class="p-body p-editorial">
+        <b style="font-family:'Antarctica', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">The dashboard your team actually opens</b>
+        <em>Warehouse-native dashboards your whole team can read, without waiting on a</em>
+        <i class="p-btn" style="background:#200e0e;border-radius:2.23px"></i>
+      </div>
+    </div>
+    <div class="strip"><i style="background:#200e0e"></i><i style="background:#ed212d"></i><i style="background:#ffffff"></i><i style="background:#f8f0ec"></i><i style="background:#f3e7e2"></i><i style="background:#fde3d6"></i><i style="background:#d2cfcf"></i></div>
+    <div class="meta">
+      <strong>Alpine Hearing Protection</strong>
+      <span>editorial · light · 10 colors</span>
+    </div>
+  </a>
+  <a class="tile" href="./047_alpine_bio.html"
+     data-name="alpine bio" data-theme="light"
+     data-hero="editorial" data-kind="payments">
+    <div class="prev" style="background:#f5f5f5;color:#1e1e1f;border-color:#000000">
+      <div class="p-nav"><span style="font-family:'Switzer', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">Alpine Bio</span>
+        <i style="background:#8ec7e2;border-radius:50px"></i></div>
+      <div class="p-body p-editorial">
+        <b style="font-family:'Switzer', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">The ledger that always balances</b>
+        <em>Take payments in 40 markets on local rails, and close the books without a </em>
+        <i class="p-btn" style="background:#8ec7e2;border-radius:50px"></i>
+      </div>
+    </div>
+    <div class="strip"><i style="background:#f5f5f5"></i><i style="background:#f8f4e6"></i><i style="background:#ffffff"></i><i style="background:#e9e9e9"></i><i style="background:#1e1e1f"></i><i style="background:#000000"></i><i style="background:#8ec7e2"></i></div>
+    <div class="meta">
+      <strong>Alpine Bio</strong>
+      <span>editorial · light · 8 colors</span>
+    </div>
+  </a>
+  <a class="tile" href="./048_allier_ho.html"
+     data-name="allier ho" data-theme="light"
+     data-hero="centered-panel" data-kind="content">
+    <div class="prev" style="background:#fcfcfc;color:#000000;border-color:#1c1c1c">
+      <div class="p-nav"><span style="font-family:'Crimson Pro', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">Allier Ho</span>
+        <i style="background:#6c5f7d;border-radius:200px"></i></div>
+      <div class="p-body p-centered-panel">
+        <b style="font-family:'Crimson Pro', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">From draft to edge in one click</b>
+        <em>Localize per field, preview the real page, and invalidate the edge cache t</em>
+        <i class="p-btn" style="background:#6c5f7d;border-radius:200px"></i>
+      </div>
+    </div>
+    <div class="strip"><i style="background:#fcfcfc"></i><i style="background:#000000"></i><i style="background:#1c1c1c"></i><i style="background:#262626"></i><i style="background:#a8a8a8"></i><i style="background:#6c5f7d"></i><i style="background:#cee6cc"></i></div>
+    <div class="meta">
+      <strong>Allier Ho</strong>
+      <span>centered-panel · light · 7 colors</span>
+    </div>
+  </a>
+  <a class="tile" href="./049_allfeat.html"
+     data-name="allfeat" data-theme="dark"
+     data-hero="display" data-kind="scheduling">
+    <div class="prev" style="background:#151515;color:#fffbeb;border-color:#383835">
+      <div class="p-nav"><span style="font-family:'TASA Orbiter', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">Allfeat</span>
+        <i style="background:#ff4a5f;border-radius:900px"></i></div>
+      <div class="p-body p-display">
+        <b style="font-family:'TASA Orbiter', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">Calendars that respect focus</b>
+        <em>Availability that respects focus time, time zones and the fact that nobody</em>
+        <i class="p-btn" style="background:#00b18c;border-radius:900px"></i>
+      </div>
+    </div>
+    <div class="strip"><i style="background:#151515"></i><i style="background:#fffbeb"></i><i style="background:#383835"></i><i style="background:#b8b8b8"></i><i style="background:#a6a6a6"></i><i style="background:#504f4a"></i><i style="background:#00b18c"></i></div>
+    <div class="meta">
+      <strong>Allfeat</strong>
+      <span>display · dark · 8 colors</span>
+    </div>
+  </a>
+  <a class="tile" href="./050_akash_tyagi.html"
+     data-name="akash tyagi" data-theme="dark"
+     data-hero="split" data-kind="crm">
+    <div class="prev" style="background:#000000;color:#efe6d8;border-color:#605c56">
+      <div class="p-nav"><span style="font-family:'sans-serif', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">Akash Tyagi</span>
+        <i style="background:#ffa1f7;border-radius:1000px"></i></div>
+      <div class="p-body p-split">
+        <b style="font-family:'sans-serif', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">Every touchpoint, one timeline</b>
+        <em>Every email, call and ticket on one timeline, with automations you can rea</em>
+        <i class="p-btn" style="background:#ffa1f7;border-radius:1000px"></i>
+      </div>
+    </div>
+    <div class="strip"><i style="background:#000000"></i><i style="background:#efe6d8"></i><i style="background:#aca69c"></i><i style="background:#736e68"></i><i style="background:#605c56"></i><i style="background:#ffa1f7"></i><i style="background:#4dff00"></i></div>
+    <div class="meta">
+      <strong>Akash Tyagi</strong>
+      <span>split · dark · 7 colors</span>
+    </div>
+  </a>
+  <a class="tile" href="./051_alison_roman.html"
+     data-name="alison roman" data-theme="light"
+     data-hero="editorial" data-kind="security">
+    <div class="prev" style="background:#f6f0e1;color:#290a08;border-color:#e5e7eb">
+      <div class="p-nav"><span style="font-family:'Jannon Neo', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">Alison Roman</span>
+        <i style="background:#810c00;border-radius:0px"></i></div>
+      <div class="p-body p-editorial">
+        <b style="font-family:'Jannon Neo', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">Audits that stop being fire drills</b>
+        <em>Continuous control monitoring with evidence collected automatically, so au</em>
+        <i class="p-btn" style="background:#290a08;border-radius:0px"></i>
+      </div>
+    </div>
+    <div class="strip"><i style="background:#290a08"></i><i style="background:#810c00"></i><i style="background:#fff3cc"></i><i style="background:#f6f0e1"></i><i style="background:#fffaec"></i><i style="background:#e5e7eb"></i><i style="background:#ffffff"></i></div>
+    <div class="meta">
+      <strong>Alison Roman</strong>
+      <span>editorial · light · 7 colors</span>
+    </div>
+  </a>
+  <a class="tile" href="./052_aligne.html"
+     data-name="aligne" data-theme="light"
+     data-hero="editorial" data-kind="security">
+    <div class="prev" style="background:#ffffff;color:#151515;border-color:#24170f">
+      <div class="p-nav"><span style="font-family:'GT America Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace">ALIGNE</span>
+        <i style="background:#0073ff;border-radius:0px"></i></div>
+      <div class="p-body p-editorial">
+        <b style="font-family:'GT America Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace">Security posture, continuously proven</b>
+        <em>Policies as code, evidence gathered on schedule, and an audit package your</em>
+        <i class="p-btn" style="background:#24170f;border-radius:0px"></i>
+      </div>
+    </div>
+    <div class="strip"><i style="background:#24170f"></i><i style="background:#151515"></i><i style="background:#ffffff"></i><i style="background:#ececec"></i><i style="background:#0073ff"></i></div>
+    <div class="meta">
+      <strong>ALIGNE</strong>
+      <span>editorial · light · 5 colors</span>
+    </div>
+  </a>
+  <a class="tile" href="./053_alejandro_mejias.html"
+     data-name="alejandro mejias" data-theme="mixed"
+     data-hero="display" data-kind="design">
+    <div class="prev" style="background:#ffffff;color:#080707;border-color:#000000">
+      <div class="p-nav"><span style="font-family:'FK Raster Grotesk Compact Trial Sharp', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">Alejandro Mejias</span>
+        <i style="background:#c8c8c8;border-radius:50px"></i></div>
+      <div class="p-body p-display">
+        <b style="font-family:'FK Raster Grotesk Compact Trial Sharp', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">Stop rebuilding the same button</b>
+        <em>Author your design language once; publish it to CSS, Swift, Compose and Fi</em>
+        <i class="p-btn" style="background:#c8c8c8;border-radius:50px"></i>
+      </div>
+    </div>
+    <div class="strip"><i style="background:#ebff00"></i><i style="background:#080707"></i><i style="background:#000000"></i><i style="background:#ffffff"></i><i style="background:#c8c8c8"></i><i style="background:#383838"></i></div>
+    <div class="meta">
+      <strong>Alejandro Mejias</strong>
+      <span>display · mixed · 6 colors</span>
+    </div>
+  </a>
+  <a class="tile" href="./054_alden.html"
+     data-name="alden" data-theme="light"
+     data-hero="editorial" data-kind="security">
+    <div class="prev" style="background:#ffffff;color:#28262a;border-color:#dddcdd">
+      <div class="p-nav"><span style="font-family:'Stk bureau Sans Book Trial', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">Alden</span>
+        <i style="background:#97cde5;border-radius:50px"></i></div>
+      <div class="p-body p-editorial">
+        <b style="font-family:'Stk bureau Sans Book Trial', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">Always audit-ready, by construction</b>
+        <em>Fourteen hundred controls checked continuously — not once a year, the week</em>
+        <i class="p-btn" style="background:#97cde5;border-radius:50px"></i>
+      </div>
+    </div>
+    <div class="strip"><i style="background:#f3f1eb"></i><i style="background:#28262a"></i><i style="background:#4a4a4c"></i><i style="background:#ffffff"></i><i style="background:#dddcdd"></i><i style="background:#cbcbcb"></i><i style="background:#97cde5"></i></div>
+    <div class="meta">
+      <strong>Alden</strong>
+      <span>editorial · light · 8 colors</span>
+    </div>
+  </a>
+  <a class="tile" href="./055_aker.html"
+     data-name="aker" data-theme="light"
+     data-hero="split" data-kind="scheduling">
+    <div class="prev" style="background:#ffffff;color:#000000;border-color:#e5e4e4">
+      <div class="p-nav"><span style="font-family:'Proxima Nova', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">Aker</span>
+        <i style="background:#b75928;border-radius:80px"></i></div>
+      <div class="p-body p-split">
+        <b style="font-family:'Proxima Nova', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">Booking, reduced to one link</b>
+        <em>Share one link. Everyone sees their own clock, buffers appear automaticall</em>
+        <i class="p-btn" style="background:#494949;border-radius:80px"></i>
+      </div>
+    </div>
+    <div class="strip"><i style="background:#000000"></i><i style="background:#ffffff"></i><i style="background:#1c1c1c"></i><i style="background:#070707"></i><i style="background:#262626"></i><i style="background:#38464a"></i><i style="background:#e5e4e4"></i></div>
+    <div class="meta">
+      <strong>Aker</strong>
+      <span>split · light · 16 colors</span>
+    </div>
+  </a>
+  <a class="tile" href="./056_aiuc.html"
+     data-name="aiuc" data-theme="light"
+     data-hero="split" data-kind="security">
+    <div class="prev" style="background:#ffffff;color:#1a1a1a;border-color:#000000">
+      <div class="p-nav"><span style="font-family:'Almarai', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">AIUC</span>
+        <i style="background:#1a1a1a;border-radius:1000px"></i></div>
+      <div class="p-body p-split">
+        <b style="font-family:'Almarai', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">Controls that check themselves</b>
+        <em>Continuous control monitoring with evidence collected automatically, so au</em>
+        <i class="p-btn" style="background:#1a1a1a;border-radius:1000px"></i>
+      </div>
+    </div>
+    <div class="strip"><i style="background:#ffffff"></i><i style="background:#000000"></i><i style="background:#1a1a1a"></i><i style="background:#323232"></i><i style="background:#5f5f5f"></i><i style="background:#707070"></i><i style="background:#8d8d8d"></i></div>
+    <div class="meta">
+      <strong>AIUC</strong>
+      <span>split · light · 9 colors</span>
+    </div>
+  </a>
+  <a class="tile" href="./057_home.html"
+     data-name="home" data-theme="light"
+     data-hero="centered-panel" data-kind="analytics">
+    <div class="prev" style="background:#f7f6e3;color:#262d29;border-color:#d6d6c5">
+      <div class="p-nav"><span style="font-family:'Prody', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">Home</span>
+        <i style="background:#262d29;border-radius:9999px"></i></div>
+      <div class="p-body p-centered-panel">
+        <b style="font-family:'Prody', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">Every number, one source of truth</b>
+        <em>Governed metrics, self-serve exploration, and alerts that page the person </em>
+        <i class="p-btn" style="background:#262d29;border-radius:9999px"></i>
+      </div>
+    </div>
+    <div class="strip"><i style="background:#f7f6e3"></i><i style="background:#262d29"></i><i style="background:#ffff48"></i></div>
+    <div class="meta">
+      <strong>Home</strong>
+      <span>centered-panel · light · 3 colors</span>
+    </div>
+  </a>
+  <a class="tile" href="./058_apple_espa_a.html"
+     data-name="apple (españa)" data-theme="light"
+     data-hero="display" data-kind="security">
+    <div class="prev" style="background:#f5f5f7;color:#1d1d1f;border-color:#d6d6d6">
+      <div class="p-nav"><span style="font-family:'SF Pro Display', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">Apple (España)</span>
+        <i style="background:#0066cc;border-radius:980px"></i></div>
+      <div class="p-body p-display">
+        <b style="font-family:'SF Pro Display', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">Evidence, not assurances</b>
+        <em>Fourteen hundred controls checked continuously — not once a year, the week</em>
+        <i class="p-btn" style="background:#0071e3;border-radius:980px"></i>
+      </div>
+    </div>
+    <div class="strip"><i style="background:#1d1d1f"></i><i style="background:#f5f5f7"></i><i style="background:#ffffff"></i><i style="background:#707070"></i><i style="background:#86868b"></i><i style="background:#333336"></i><i style="background:#474747"></i></div>
+    <div class="meta">
+      <strong>Apple (España)</strong>
+      <span>display · light · 11 colors</span>
+    </div>
+  </a>
+  <a class="tile" href="./059_henry.html"
+     data-name="henry" data-theme="dark"
+     data-hero="display" data-kind="design">
+    <div class="prev" style="background:#000000;color:#d4d0c9;border-color:#d4d0c9">
+      <div class="p-nav"><span style="font-family:'sans-serif', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">Henry</span>
+        <i style="background:#d4d0c9;border-radius:56px"></i></div>
+      <div class="p-body p-display">
+        <b style="font-family:'sans-serif', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">Your design language, versioned</b>
+        <em>Version your tokens like code, see what each change touches, and validate </em>
+        <i class="p-btn" style="background:#d4d0c9;border-radius:56px"></i>
+      </div>
+    </div>
+    <div class="strip"><i style="background:#000000"></i><i style="background:#141414"></i><i style="background:#0c0c0c"></i><i style="background:#d4d0c9"></i><i style="background:#878581"></i><i style="background:#615f5c"></i><i style="background:#d9d9d9"></i></div>
+    <div class="meta">
+      <strong>Henry</strong>
+      <span>display · dark · 9 colors</span>
+    </div>
+  </a>
+  <a class="tile" href="./060_aira.html"
+     data-name="aira" data-theme="light"
+     data-hero="editorial" data-kind="content">
+    <div class="prev" style="background:#fafafb;color:#1f1f1f;border-color:#2c2c2b">
+      <div class="p-nav"><span style="font-family:'Gestura (custom serif)', ui-serif, Georgia, Cambria, "Times New Roman", Times, serif">Aira</span>
+        <i style="background:#2c2c2b;border-radius:99px"></i></div>
+      <div class="p-body p-editorial">
+        <b style="font-family:'Gestura (custom serif)', ui-serif, Georgia, Cambria, "Times New Roman", Times, serif">From draft to edge in one click</b>
+        <em>Localize per field, preview the real page, and invalidate the edge cache t</em>
+        <i class="p-btn" style="background:#1f1f1f;border-radius:99px"></i>
+      </div>
+    </div>
+    <div class="strip"><i style="background:#fafafb"></i><i style="background:#2c2c2b"></i><i style="background:#1f1f1f"></i><i style="background:#111111"></i><i style="background:#080808"></i><i style="background:#70706f"></i><i style="background:#cbcbcb"></i></div>
+    <div class="meta">
+      <strong>Aira</strong>
+      <span>editorial · light · 10 colors</span>
+    </div>
+  </a>
+  <a class="tile" href="./061_getanchor.html"
+     data-name="getanchor" data-theme="light"
+     data-hero="editorial" data-kind="crm">
+    <div class="prev" style="background:#ffffff;color:#000000;border-color:#d6d6d6">
+      <div class="p-nav"><span style="font-family:'Archivo', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">Getanchor</span>
+        <i style="background:#ee884f;border-radius:4800px"></i></div>
+      <div class="p-body p-editorial">
+        <b style="font-family:'Archivo', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">Context, on every call</b>
+        <em>A customer record that updates itself from the tools your team already liv</em>
+        <i class="p-btn" style="background:#ee884f;border-radius:4800px"></i>
+      </div>
+    </div>
+    <div class="strip"><i style="background:#1e1e1e"></i><i style="background:#e3d7cd"></i><i style="background:#f0e9e5"></i><i style="background:#f5f2f0"></i><i style="background:#ffffff"></i><i style="background:#c9c9c7"></i><i style="background:#767676"></i></div>
+    <div class="meta">
+      <strong>Getanchor</strong>
+      <span>editorial · light · 9 colors</span>
+    </div>
+  </a>
+  <a class="tile" href="./062_backlight.html"
+     data-name="backlight" data-theme="light"
+     data-hero="editorial" data-kind="payments">
+    <div class="prev" style="background:#e4ddd5;color:#151515;border-color:#f3b8a9">
+      <div class="p-nav"><span style="font-family:'Instrument Sans', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">Backlight</span>
+        <i style="background:#dd3508;border-radius:60px"></i></div>
+      <div class="p-body p-editorial">
+        <b style="font-family:'Instrument Sans', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">Billing complexity, quietly absorbed</b>
+        <em>Take payments in 40 markets on local rails, and close the books without a </em>
+        <i class="p-btn" style="background:#dd3508;border-radius:60px"></i>
+      </div>
+    </div>
+    <div class="strip"><i style="background:#dd3508"></i><i style="background:#f3b8a9"></i><i style="background:#e4ddd5"></i><i style="background:#ffffff"></i><i style="background:#151515"></i><i style="background:#4f4f4f"></i><i style="background:#333333"></i></div>
+    <div class="meta">
+      <strong>Backlight</strong>
+      <span>editorial · light · 9 colors</span>
+    </div>
+  </a>
+  <a class="tile" href="./063_exante.html"
+     data-name="exante" data-theme="light"
+     data-hero="display" data-kind="design">
+    <div class="prev" style="background:#ffffff;color:#1e211e;border-color:#1e211e">
+      <div class="p-nav"><span style="font-family:'sans-serif', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">Exante</span>
+        <i style="background:#1e211e;border-radius:2px"></i></div>
+      <div class="p-body p-display">
+        <b style="font-family:'sans-serif', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">Tokens in, products out</b>
+        <em>Define tokens once and ship them to every surface — web, native and docs —</em>
+        <i class="p-btn" style="background:#1e211e;border-radius:2px"></i>
+      </div>
+    </div>
+    <div class="strip"><i style="background:#1e211e"></i><i style="background:#ffffff"></i><i style="background:#000000"></i><i style="background:#4b4d4b"></i><i style="background:#d2d3d2"></i><i style="background:#90fc95"></i></div>
+    <div class="meta">
+      <strong>Exante</strong>
+      <span>display · light · 6 colors</span>
+    </div>
+  </a>
+  <a class="tile" href="./064_invisibletech.html"
+     data-name="invisibletech" data-theme="light"
+     data-hero="editorial" data-kind="content">
+    <div class="prev" style="background:#ffffff;color:#0f0f0f;border-color:#dbdbdb">
+      <div class="p-nav"><span style="font-family:'Apk Galeria', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">Invisibletech</span>
+        <i style="background:#0c76fe;border-radius:50px"></i></div>
+      <div class="p-body p-editorial">
+        <b style="font-family:'Apk Galeria', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">Publishing without the bottleneck</b>
+        <em>A structured editor and a delivery API, so content moves without a deploy </em>
+        <i class="p-btn" style="background:#0c76fe;border-radius:50px"></i>
+      </div>
+    </div>
+    <div class="strip"><i style="background:#0f0f0f"></i><i style="background:#222222"></i><i style="background:#4c4c4c"></i><i style="background:#606060"></i><i style="background:#898989"></i><i style="background:#9d9d9d"></i><i style="background:#b2b2b2"></i></div>
+    <div class="meta">
+      <strong>Invisibletech</strong>
+      <span>editorial · light · 14 colors</span>
+    </div>
+  </a>
+  <a class="tile" href="./065_ori.html"
+     data-name="ori" data-theme="dark"
+     data-hero="centered" data-kind="payments">
+    <div class="prev" style="background:#000000;color:#f5f5f5;border-color:#3c3c3c">
+      <div class="p-nav"><span style="font-family:'TWK Everett', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">Ori</span>
+        <i style="background:#ff4f2b;border-radius:0px"></i></div>
+      <div class="p-body p-centered">
+        <b style="font-family:'TWK Everett', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">Charge, reconcile, sleep</b>
+        <em>Usage billing, retries and payouts on a double-entry ledger you can audit </em>
+        <i class="p-btn" style="background:#ff4f2b;border-radius:0px"></i>
+      </div>
+    </div>
+    <div class="strip"><i style="background:#ff4f2b"></i><i style="background:#000000"></i><i style="background:#1a1a1a"></i><i style="background:#3c3c3c"></i><i style="background:#737373"></i><i style="background:#bfbfbf"></i><i style="background:#f5f5f5"></i></div>
+    <div class="meta">
+      <strong>Ori</strong>
+      <span>centered · dark · 7 colors</span>
+    </div>
+  </a>
+  <a class="tile" href="./066_pravah.html"
+     data-name="pravah" data-theme="light"
+     data-hero="editorial" data-kind="content">
+    <div class="prev" style="background:#ffffff;color:#111111;border-color:#d9d9d9">
+      <div class="p-nav"><span style="font-family:'ABCfavorit Book', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">Pravah</span>
+        <i style="background:#181011;border-radius:100px"></i></div>
+      <div class="p-body p-editorial">
+        <b style="font-family:'ABCfavorit Book', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">Content operations, unblocked</b>
+        <em>Localize per field, preview the real page, and invalidate the edge cache t</em>
+        <i class="p-btn" style="background:#181011;border-radius:100px"></i>
+      </div>
+    </div>
+    <div class="strip"><i style="background:#f3f1ed"></i><i style="background:#ffffff"></i><i style="background:#181011"></i><i style="background:#222222"></i><i style="background:#302023"></i><i style="background:#aaaaaa"></i><i style="background:#666666"></i></div>
+    <div class="meta">
+      <strong>Pravah</strong>
+      <span>editorial · light · 8 colors</span>
+    </div>
+  </a>
+  <a class="tile" href="./067_grove_ai.html"
+     data-name="grove ai" data-theme="light"
+     data-hero="editorial" data-kind="payments">
+    <div class="prev" style="background:#ffffff;color:#1c1c1e;border-color:#1c1c1e">
+      <div class="p-nav"><span style="font-family:'sans-serif', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">Grove AI</span>
+        <i style="background:#0b835c;border-radius:100px"></i></div>
+      <div class="p-body p-editorial">
+        <b style="font-family:'sans-serif', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">Move money without the moving parts</b>
+        <em>One API for cards, transfers and payouts across 40 markets, with reconcili</em>
+        <i class="p-btn" style="background:#0b835c;border-radius:100px"></i>
+      </div>
+    </div>
+    <div class="strip"><i style="background:#0b835c"></i><i style="background:#1c2b27"></i><i style="background:#1c1c1e"></i><i style="background:#303033"></i><i style="background:#676768"></i><i style="background:#eff1f6"></i><i style="background:#ffffff"></i></div>
+    <div class="meta">
+      <strong>Grove AI</strong>
+      <span>editorial · light · 8 colors</span>
+    </div>
+  </a>
+  <a class="tile" href="./068_flatfile.html"
+     data-name="flatfile" data-theme="light"
+     data-hero="editorial" data-kind="design">
+    <div class="prev" style="background:#e5ebd3;color:#1b1b1e;border-color:#e5e7eb">
+      <div class="p-nav"><span style="font-family:'FlatfileDiatypeVariable', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">Flatfile</span>
+        <i style="background:#090b2b;border-radius:99px"></i></div>
+      <div class="p-body p-editorial">
+        <b style="font-family:'FlatfileDiatypeVariable', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">Design systems that stay in sync</b>
+        <em>Define tokens once and ship them to every surface — web, native and docs —</em>
+        <i class="p-btn" style="background:#090b2b;border-radius:99px"></i>
+      </div>
+    </div>
+    <div class="strip"><i style="background:#090b2b"></i><i style="background:#151515"></i><i style="background:#1b1b1e"></i><i style="background:#262626"></i><i style="background:#808080"></i><i style="background:#aaaaaa"></i><i style="background:#d7d7d7"></i></div>
+    <div class="meta">
+      <strong>Flatfile</strong>
+      <span>editorial · light · 12 colors</span>
+    </div>
+  </a>
+  <a class="tile" href="./069_daylit.html"
+     data-name="daylit" data-theme="light"
+     data-hero="centered-panel" data-kind="crm">
+    <div class="prev" style="background:#fbf9f6;color:#4d1520;border-color:#f2eee7">
+      <div class="p-nav"><span style="font-family:'Tt Commons Pro Variable', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">Daylit</span>
+        <i style="background:#e6b800;border-radius:1440px"></i></div>
+      <div class="p-body p-centered-panel">
+        <b style="font-family:'Tt Commons Pro Variable', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">One record per customer, everywhere</b>
+        <em>Every email, call and ticket on one timeline, with automations you can rea</em>
+        <i class="p-btn" style="background:#4d1520;border-radius:1440px"></i>
+      </div>
+    </div>
+    <div class="strip"><i style="background:#4d1520"></i><i style="background:#360912"></i><i style="background:#faffa7"></i><i style="background:#662f3d"></i><i style="background:#e6b800"></i><i style="background:#825b63"></i><i style="background:#fbf9f6"></i></div>
+    <div class="meta">
+      <strong>Daylit</strong>
+      <span>centered-panel · light · 17 colors</span>
+    </div>
+  </a>
+  <a class="tile" href="./070_parloa.html"
+     data-name="parloa" data-theme="light"
+     data-hero="editorial" data-kind="security">
+    <div class="prev" style="background:#ebe9e1;color:#1f1c1b;border-color:#d9d6ce">
+      <div class="p-nav"><span style="font-family:'Exposure30', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">Parloa</span>
+        <i style="background:#ff7714;border-radius:2px"></i></div>
+      <div class="p-body p-editorial">
+        <b style="font-family:'Exposure30', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">Compliance without the scramble</b>
+        <em>Fourteen hundred controls checked continuously — not once a year, the week</em>
+        <i class="p-btn" style="background:#1f1c1b;border-radius:2px"></i>
+      </div>
+    </div>
+    <div class="strip"><i style="background:#1f1c1b"></i><i style="background:#ffffff"></i><i style="background:#ebe9e1"></i><i style="background:#f5f4f0"></i><i style="background:#a69b92"></i><i style="background:#d9d6ce"></i><i style="background:#2d2724"></i></div>
+    <div class="meta">
+      <strong>Parloa</strong>
+      <span>editorial · light · 10 colors</span>
+    </div>
+  </a>
+  <a class="tile" href="./071_handhold.html"
+     data-name="handhold" data-theme="light"
+     data-hero="editorial" data-kind="analytics">
+    <div class="prev" style="background:#f2f1ed;color:#000000;border-color:#dbd7cd">
+      <div class="p-nav"><span style="font-family:'bureauSerif', ui-serif, Georgia, Cambria, "Times New Roman", Times, serif">Handhold</span>
+        <i style="background:#000000;border-radius:9999px"></i></div>
+      <div class="p-body p-editorial">
+        <b style="font-family:'bureauSerif', ui-serif, Georgia, Cambria, "Times New Roman", Times, serif">Metrics that mean the same thing twice</b>
+        <em>Query your warehouse directly, define each metric once, and let anyone ans</em>
+        <i class="p-btn" style="background:#000000;border-radius:9999px"></i>
+      </div>
+    </div>
+    <div class="strip"><i style="background:#000000"></i><i style="background:#f2f1ed"></i><i style="background:#dbd7cd"></i><i style="background:#737373"></i><i style="background:#999999"></i><i style="background:#ffffff"></i></div>
+    <div class="meta">
+      <strong>Handhold</strong>
+      <span>editorial · light · 6 colors</span>
+    </div>
+  </a>
+  <a class="tile" href="./072_agronomy_workshop.html"
+     data-name="agronomy workshop" data-theme="light"
+     data-hero="split" data-kind="infra">
+    <div class="prev" style="background:#ffffff;color:#1e1e1e;border-color:#000000">
+      <div class="p-nav"><span style="font-family:'Gerstner Programm FSL Regular', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">Agronomy Workshop</span>
+        <i style="background:#0076ff;border-radius:5px"></i></div>
+      <div class="p-body p-split">
+        <b style="font-family:'Gerstner Programm FSL Regular', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">From commit to edge in eight seconds</b>
+        <em>Thirty regions, sub-40ms cold starts, and autoscaling to zero between requ</em>
+        <i class="p-btn" style="background:#0076ff;border-radius:5px"></i>
+      </div>
+    </div>
+    <div class="strip"><i style="background:#0076ff"></i><i style="background:#f4eb59"></i><i style="background:#c3d7ee"></i><i style="background:#ffffff"></i><i style="background:#eeede8"></i><i style="background:#000000"></i><i style="background:#1e1e1e"></i></div>
+    <div class="meta">
+      <strong>Agronomy Workshop</strong>
+      <span>split · light · 9 colors</span>
+    </div>
+  </a>
+  <a class="tile" href="./073_aevi_wellness.html"
+     data-name="aevi wellness" data-theme="light"
+     data-hero="editorial" data-kind="analytics">
+    <div class="prev" style="background:#ffffff;color:#231f20;border-color:#231f20">
+      <div class="p-nav"><span style="font-family:'Primary Font', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">Aevi Wellness</span>
+        <i style="background:#a3bfdb;border-radius:60px"></i></div>
+      <div class="p-body p-editorial">
+        <b style="font-family:'Primary Font', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">Metrics that mean the same thing twice</b>
+        <em>Query your warehouse directly, define each metric once, and let anyone ans</em>
+        <i class="p-btn" style="background:#a3bfdb;border-radius:60px"></i>
+      </div>
+    </div>
+    <div class="strip"><i style="background:#d5e0ea"></i><i style="background:#a3bfdb"></i><i style="background:#231f20"></i><i style="background:#000000"></i><i style="background:#ffffff"></i><i style="background:#5f6368"></i></div>
+    <div class="meta">
+      <strong>Aevi Wellness</strong>
+      <span>editorial · light · 6 colors</span>
+    </div>
+  </a>
+  <a class="tile" href="./074_advene.html"
+     data-name="advene" data-theme="light"
+     data-hero="editorial" data-kind="payments">
+    <div class="prev" style="background:#dfe0db;color:#000000;border-color:#000000">
+      <div class="p-nav"><span style="font-family:'Signifier', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">Advene</span>
+        <i style="background:#66040c;border-radius:41px"></i></div>
+      <div class="p-body p-editorial">
+        <b style="font-family:'Signifier', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">Revenue that reconciles itself</b>
+        <em>Take payments in 40 markets on local rails, and close the books without a </em>
+        <i class="p-btn" style="background:#007aff;border-radius:41px"></i>
+      </div>
+    </div>
+    <div class="strip"><i style="background:#dfe0db"></i><i style="background:#eeefea"></i><i style="background:#ffffff"></i><i style="background:#000000"></i><i style="background:#3c3c3b"></i><i style="background:#808080"></i><i style="background:#121212"></i></div>
+    <div class="meta">
+      <strong>Advene</strong>
+      <span>editorial · light · 13 colors</span>
+    </div>
+  </a>
+  <a class="tile" href="./075_neverhack.html"
+     data-name="neverhack" data-theme="light"
+     data-hero="centered-panel" data-kind="design">
+    <div class="prev" style="background:#f6f7fc;color:#0a0f1f;border-color:#e5e7eb">
+      <div class="p-nav"><span style="font-family:'Roobert', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">NEVERHACK</span>
+        <i style="background:#6b2bea;border-radius:999px"></i></div>
+      <div class="p-body p-centered-panel">
+        <b style="font-family:'Roobert', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">One source, every surface</b>
+        <em>Author your design language once; publish it to CSS, Swift, Compose and Fi</em>
+        <i class="p-btn" style="background:#dc2626;border-radius:999px"></i>
+      </div>
+    </div>
+    <div class="strip"><i style="background:#0a0f1f"></i><i style="background:#ffffff"></i><i style="background:#f6f7fc"></i><i style="background:#e5e7eb"></i><i style="background:#d8d7e2"></i><i style="background:#4e4e4e"></i><i style="background:#999999"></i></div>
+    <div class="meta">
+      <strong>NEVERHACK</strong>
+      <span>centered-panel · light · 11 colors</span>
+    </div>
+  </a>
+  <a class="tile" href="./076_adora.html"
+     data-name="adora" data-theme="light"
+     data-hero="centered" data-kind="design">
+    <div class="prev" style="background:#ffffff;color:#353241;border-color:#e0e0db">
+      <div class="p-nav"><span style="font-family:'PolySans', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">Adora</span>
+        <i style="background:#592eff;border-radius:48px"></i></div>
+      <div class="p-body p-centered">
+        <b style="font-family:'PolySans', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">Design decisions that survive handoff</b>
+        <em>Define tokens once and ship them to every surface — web, native and docs —</em>
+        <i class="p-btn" style="background:#592eff;border-radius:48px"></i>
+      </div>
+    </div>
+    <div class="strip"><i style="background:#592eff"></i><i style="background:#21164c"></i><i style="background:#353241"></i><i style="background:#5f5f69"></i><i style="background:#e0e0db"></i><i style="background:#eeeeee"></i><i style="background:#ffffff"></i></div>
+    <div class="meta">
+      <strong>Adora</strong>
+      <span>centered · light · 13 colors</span>
+    </div>
+  </a>
+  <a class="tile" href="./077_adnaut.html"
+     data-name="adnaut" data-theme="dark"
+     data-hero="centered" data-kind="analytics">
+    <div class="prev" style="background:#1f1d01;color:#d7d7d7;border-color:#707070">
+      <div class="p-nav"><span style="font-family:'Archivo', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">Adnaut</span>
+        <i style="background:#00ff1a;border-radius:16px"></i></div>
+      <div class="p-body p-centered">
+        <b style="font-family:'Archivo', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">The dashboard your team actually opens</b>
+        <em>Warehouse-native dashboards your whole team can read, without waiting on a</em>
+        <i class="p-btn" style="background:#ffe900;border-radius:16px"></i>
+      </div>
+    </div>
+    <div class="strip"><i style="background:#ffe900"></i><i style="background:#00ff1a"></i><i style="background:#1f1d01"></i><i style="background:#282828"></i><i style="background:#707070"></i><i style="background:#d7d7d7"></i><i style="background:#f2f2f2"></i></div>
+    <div class="meta">
+      <strong>Adnaut</strong>
+      <span>centered · dark · 10 colors</span>
+    </div>
+  </a>
+  <a class="tile" href="./078_adopt.html"
+     data-name="adopt" data-theme="light"
+     data-hero="editorial" data-kind="payments">
+    <div class="prev" style="background:#f4f1ec;color:#1e1e1e;border-color:#1e1e1e">
+      <div class="p-nav"><span style="font-family:'ITCGaramondStdLightNarrow', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">Adopt</span>
+        <i style="background:#8c8c8c;border-radius:0px"></i></div>
+      <div class="p-body p-editorial">
+        <b style="font-family:'ITCGaramondStdLightNarrow', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">Billing that survives contact with reality</b>
+        <em>One API for cards, transfers and payouts across 40 markets, with reconcili</em>
+        <i class="p-btn" style="background:#8c8c8c;border-radius:0px"></i>
+      </div>
+    </div>
+    <div class="strip"><i style="background:#f4f1ec"></i><i style="background:#1e1e1e"></i><i style="background:#8c8c8c"></i><i style="background:#000000"></i></div>
+    <div class="meta">
+      <strong>Adopt</strong>
+      <span>editorial · light · 4 colors</span>
+    </div>
+  </a>
+  <a class="tile" href="./079_adcker.html"
+     data-name="adcker" data-theme="light"
+     data-hero="display" data-kind="design">
+    <div class="prev" style="background:#efedea;color:#191919;border-color:#191919">
+      <div class="p-nav"><span style="font-family:'nhm', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">Adcker</span>
+        <i style="background:#191919;border-radius:0px"></i></div>
+      <div class="p-body p-display">
+        <b style="font-family:'nhm', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">Tokens in, products out</b>
+        <em>Define tokens once and ship them to every surface — web, native and docs —</em>
+        <i class="p-btn" style="background:#191919;border-radius:0px"></i>
+      </div>
+    </div>
+    <div class="strip"><i style="background:#191919"></i><i style="background:#efedea"></i><i style="background:#e3e1de"></i></div>
+    <div class="meta">
+      <strong>Adcker</strong>
+      <span>display · light · 3 colors</span>
+    </div>
+  </a>
+  <a class="tile" href="./080_adam_lippes.html"
+     data-name="adam lippes" data-theme="light"
+     data-hero="editorial" data-kind="scheduling">
+    <div class="prev" style="background:#fefcf8;color:#000000;border-color:#000000">
+      <div class="p-nav"><span style="font-family:'Optima', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">Adam Lippes</span>
+        <i style="background:#000000;border-radius:1000px"></i></div>
+      <div class="p-body p-editorial">
+        <b style="font-family:'Optima', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">Scheduling without the back and forth</b>
+        <em>Round-robin that distributes fairly, reminders on the channel each person </em>
+        <i class="p-btn" style="background:#000000;border-radius:1000px"></i>
+      </div>
+    </div>
+    <div class="strip"><i style="background:#fefcf8"></i><i style="background:#ffffff"></i><i style="background:#000000"></i><i style="background:#403f3e"></i><i style="background:#121212"></i><i style="background:#1d1d1d"></i><i style="background:#2f2f2f"></i></div>
+    <div class="meta">
+      <strong>Adam Lippes</strong>
+      <span>editorial · light · 9 colors</span>
+    </div>
+  </a>
+  <a class="tile" href="./081_adanola.html"
+     data-name="adanola" data-theme="light"
+     data-hero="editorial" data-kind="payments">
+    <div class="prev" style="background:#ffffff;color:#000000;border-color:#000000">
+      <div class="p-nav"><span style="font-family:'Favorit', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">Adanola</span>
+        <i style="background:#222845;border-radius:4px"></i></div>
+      <div class="p-body p-editorial">
+        <b style="font-family:'Favorit', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">Revenue that reconciles itself</b>
+        <em>Take payments in 40 markets on local rails, and close the books without a </em>
+        <i class="p-btn" style="background:#000000;border-radius:4px"></i>
+      </div>
+    </div>
+    <div class="strip"><i style="background:#000000"></i><i style="background:#ffffff"></i><i style="background:#e5e7eb"></i><i style="background:#f0efe7"></i><i style="background:#f5ebd5"></i><i style="background:#333333"></i><i style="background:#1d1d1d"></i></div>
+    <div class="meta">
+      <strong>Adanola</strong>
+      <span>editorial · light · 15 colors</span>
+    </div>
+  </a>
+  <a class="tile" href="./082_adaptive_ml.html"
+     data-name="adaptive ml" data-theme="light"
+     data-hero="editorial" data-kind="payments">
+    <div class="prev" style="background:#ffffff;color:#272421;border-color:#edebe8">
+      <div class="p-nav"><span style="font-family:'Egyptienne F LT', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">Adaptive ML</span>
+        <i style="background:#272421;border-radius:1600px"></i></div>
+      <div class="p-body p-editorial">
+        <b style="font-family:'Egyptienne F LT', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">Move money without the moving parts</b>
+        <em>Take payments in 40 markets on local rails, and close the books without a </em>
+        <i class="p-btn" style="background:#272421;border-radius:1600px"></i>
+      </div>
+    </div>
+    <div class="strip"><i style="background:#272421"></i><i style="background:#edebe8"></i><i style="background:#e3e3e2"></i><i style="background:#eeeeed"></i><i style="background:#7d7c7a"></i><i style="background:#333333"></i><i style="background:#ffffff"></i></div>
+    <div class="meta">
+      <strong>Adaptive ML</strong>
+      <span>editorial · light · 7 colors</span>
+    </div>
+  </a>
+  <a class="tile" href="./083_kindsight.html"
+     data-name="kindsight" data-theme="light"
+     data-hero="editorial" data-kind="infra">
+    <div class="prev" style="background:#faf5f1;color:#0e0f0a;border-color:#0e0f0a">
+      <div class="p-nav"><span style="font-family:'Times Now', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">Kindsight</span>
+        <i style="background:#3d4128;border-radius:50px"></i></div>
+      <div class="p-body p-editorial">
+        <b style="font-family:'Times Now', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">No cluster to babysit</b>
+        <em>Global runtime with instant rollbacks, preview environments per branch, an</em>
+        <i class="p-btn" style="background:#de7653;border-radius:50px"></i>
+      </div>
+    </div>
+    <div class="strip"><i style="background:#faf5f1"></i><i style="background:#fefffa"></i><i style="background:#0e0f0a"></i><i style="background:#0a0a0a"></i><i style="background:#ffffff"></i><i style="background:#e5e1d6"></i><i style="background:#3d4128"></i></div>
+    <div class="meta">
+      <strong>Kindsight</strong>
+      <span>editorial · light · 11 colors</span>
+    </div>
+  </a>
+  <a class="tile" href="./084_eddie.html"
+     data-name="eddie" data-theme="light"
+     data-hero="split" data-kind="design">
+    <div class="prev" style="background:#f7f4f2;color:#000000;border-color:#cdcbd0">
+      <div class="p-nav"><span style="font-family:'Founders Grotesk', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">Eddie</span>
+        <i style="background:#b7b2ff;border-radius:60px"></i></div>
+      <div class="p-body p-split">
+        <b style="font-family:'Founders Grotesk', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">Your design language, versioned</b>
+        <em>Author your design language once; publish it to CSS, Swift, Compose and Fi</em>
+        <i class="p-btn" style="background:#000000;border-radius:60px"></i>
+      </div>
+    </div>
+    <div class="strip"><i style="background:#000000"></i><i style="background:#f7f4f2"></i><i style="background:#ffffff"></i><i style="background:#eeeafa"></i><i style="background:#cdcbd0"></i><i style="background:#4d4c51"></i><i style="background:#767481"></i></div>
+    <div class="meta">
+      <strong>Eddie</strong>
+      <span>split · light · 12 colors</span>
+    </div>
+  </a>
+  <a class="tile" href="./085_le_camp.html"
+     data-name="le camp" data-theme="light"
+     data-hero="split" data-kind="payments">
+    <div class="prev" style="background:#ffffff;color:#000000;border-color:#000000">
+      <div class="p-nav"><span style="font-family:'Agrandir', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">LE CAMP</span>
+        <i style="background:#fe3a3a;border-radius:35px"></i></div>
+      <div class="p-body p-split">
+        <b style="font-family:'Agrandir', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">Billing that survives contact with reality</b>
+        <em>One API for cards, transfers and payouts across 40 markets, with reconcili</em>
+        <i class="p-btn" style="background:#fe3a3a;border-radius:35px"></i>
+      </div>
+    </div>
+    <div class="strip"><i style="background:#fe3a3a"></i><i style="background:#000000"></i><i style="background:#ffffff"></i><i style="background:#767676"></i></div>
+    <div class="meta">
+      <strong>LE CAMP</strong>
+      <span>split · light · 4 colors</span>
+    </div>
+  </a>
+  <a class="tile" href="./086_2_ag.html"
+     data-name="2.ag" data-theme="light"
+     data-hero="centered-panel" data-kind="infra">
+    <div class="prev" style="background:#ffffff;color:#000000;border-color:#e5e7eb">
+      <div class="p-nav"><span style="font-family:'Inter Tight', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">2.AG</span>
+        <i style="background:#2ecea0;border-radius:50px"></i></div>
+      <div class="p-body p-centered-panel">
+        <b style="font-family:'Inter Tight', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">Deploy in seconds, roll back in one</b>
+        <em>Push a branch, get an environment. Merge it, and it disappears. Roll back </em>
+        <i class="p-btn" style="background:#2ecea0;border-radius:50px"></i>
+      </div>
+    </div>
+    <div class="strip"><i style="background:#244d54"></i><i style="background:#2ecea0"></i><i style="background:#6dddbd"></i><i style="background:#000000"></i><i style="background:#151515"></i><i style="background:#4d4d4d"></i><i style="background:#858585"></i></div>
+    <div class="meta">
+      <strong>2.AG</strong>
+      <span>centered-panel · light · 11 colors</span>
+    </div>
+  </a>
+  <a class="tile" href="./087_70materia.html"
+     data-name="70materia" data-theme="light"
+     data-hero="split" data-kind="scheduling">
+    <div class="prev" style="background:#bababa;color:#000000;border-color:#000000">
+      <div class="p-nav"><span style="font-family:'Matter', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">70Materia</span>
+        <i style="background:#ffffff;border-radius:3px"></i></div>
+      <div class="p-body p-split">
+        <b style="font-family:'Matter', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">Availability that thinks ahead</b>
+        <em>Share one link. Everyone sees their own clock, buffers appear automaticall</em>
+        <i class="p-btn" style="background:#1e1e1e;border-radius:3px"></i>
+      </div>
+    </div>
+    <div class="strip"><i style="background:#000000"></i><i style="background:#ffffff"></i><i style="background:#1e1e1e"></i><i style="background:#bababa"></i></div>
+    <div class="meta">
+      <strong>70Materia</strong>
+      <span>split · light · 4 colors</span>
+    </div>
+  </a>
+  <a class="tile" href="./088_aaron_poe_co.html"
+     data-name="aaron poe &amp; co" data-theme="light"
+     data-hero="centered" data-kind="analytics">
+    <div class="prev" style="background:#ffffff;color:#282828;border-color:#cccccc">
+      <div class="p-nav"><span style="font-family:'-apple-system', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">Aaron Poe &amp; Co</span>
+        <i style="background:#ea587d;border-radius:90px"></i></div>
+      <div class="p-body p-centered">
+        <b style="font-family:'-apple-system', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">Metrics that mean the same thing twice</b>
+        <em>Query your warehouse directly, define each metric once, and let anyone ans</em>
+        <i class="p-btn" style="background:#ea587d;border-radius:90px"></i>
+      </div>
+    </div>
+    <div class="strip"><i style="background:#ea587d"></i><i style="background:#ffffff"></i><i style="background:#f2f2f2"></i><i style="background:#d9d8d4"></i><i style="background:#282828"></i><i style="background:#121212"></i><i style="background:#000000"></i></div>
+    <div class="meta">
+      <strong>Aaron Poe &amp; Co</strong>
+      <span>centered · light · 9 colors</span>
+    </div>
+  </a>
+  <a class="tile" href="./089_ada.html"
+     data-name="ada" data-theme="light"
+     data-hero="display" data-kind="crm">
+    <div class="prev" style="background:#f9f9f9;color:#0a0b0c;border-color:#0a0b0c">
+      <div class="p-nav"><span style="font-family:'Roobert', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">Ada</span>
+        <i style="background:#0a0b0c;border-radius:9999px"></i></div>
+      <div class="p-body p-display">
+        <b style="font-family:'Roobert', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">The CRM your reps stop avoiding</b>
+        <em>Every email, call and ticket on one timeline, with automations you can rea</em>
+        <i class="p-btn" style="background:#0a0b0c;border-radius:9999px"></i>
+      </div>
+    </div>
+    <div class="strip"><i style="background:#0a0b0c"></i><i style="background:#f9f9f9"></i><i style="background:#ffffff"></i><i style="background:#d8d8d8"></i><i style="background:#392c38"></i><i style="background:#00543d"></i><i style="background:#abcbf9"></i></div>
+    <div class="meta">
+      <strong>Ada</strong>
+      <span>display · light · 9 colors</span>
+    </div>
+  </a>
+  <a class="tile" href="./090_acme_cups_new_zealand.html"
+     data-name="acme cups new zealand" data-theme="light"
+     data-hero="display" data-kind="infra">
+    <div class="prev" style="background:#e3e2e2;color:#000000;border-color:#000000">
+      <div class="p-nav"><span style="font-family:'Helvetica Neue', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">Acme Cups New Zealand</span>
+        <i style="background:#9b1b01;border-radius:8px"></i></div>
+      <div class="p-body p-display">
+        <b style="font-family:'Helvetica Neue', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">No cluster to babysit</b>
+        <em>Push a branch, get an environment. Merge it, and it disappears. Roll back </em>
+        <i class="p-btn" style="background:#000000;border-radius:8px"></i>
+      </div>
+    </div>
+    <div class="strip"><i style="background:#000000"></i><i style="background:#fefefe"></i><i style="background:#e3e2e2"></i><i style="background:#c3c3c3"></i><i style="background:#aeaaaa"></i><i style="background:#666666"></i><i style="background:#9b1b01"></i></div>
+    <div class="meta">
+      <strong>Acme Cups New Zealand</strong>
+      <span>display · light · 7 colors</span>
+    </div>
+  </a>
+  <a class="tile" href="./091_oak_me.html"
+     data-name="oakâme" data-theme="light"
+     data-hero="editorial" data-kind="scheduling">
+    <div class="prev" style="background:#f6f1eb;color:#403a34;border-color:#403a34">
+      <div class="p-nav"><span style="font-family:'BwGradual', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">Oakâme</span>
+        <i style="background:#333333;border-radius:0px"></i></div>
+      <div class="p-body p-editorial">
+        <b style="font-family:'BwGradual', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">Booking, reduced to one link</b>
+        <em>Round-robin that distributes fairly, reminders on the channel each person </em>
+        <i class="p-btn" style="background:#403a34;border-radius:0px"></i>
+      </div>
+    </div>
+    <div class="strip"><i style="background:#403a34"></i><i style="background:#f6f1eb"></i><i style="background:#333333"></i><i style="background:#555555"></i></div>
+    <div class="meta">
+      <strong>Oakâme</strong>
+      <span>editorial · light · 4 colors</span>
+    </div>
+  </a>
+  <a class="tile" href="./092_accompany.html"
+     data-name="accompany" data-theme="light"
+     data-hero="editorial" data-kind="payments">
+    <div class="prev" style="background:#ffffff;color:#000000;border-color:#000000">
+      <div class="p-nav"><span style="font-family:'Items-Light', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">ACCOMPANY</span>
+        <i style="background:#0a0a0a;border-radius:0px"></i></div>
+      <div class="p-body p-editorial">
+        <b style="font-family:'Items-Light', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">Charge, reconcile, sleep</b>
+        <em>One API for cards, transfers and payouts across 40 markets, with reconcili</em>
+        <i class="p-btn" style="background:#0a0a0a;border-radius:0px"></i>
+      </div>
+    </div>
+    <div class="strip"><i style="background:#ffffff"></i><i style="background:#000000"></i><i style="background:#0a0a0a"></i></div>
+    <div class="meta">
+      <strong>ACCOMPANY</strong>
+      <span>editorial · light · 3 colors</span>
+    </div>
+  </a>
+  <a class="tile" href="./093_abel.html"
+     data-name="abel" data-theme="light"
+     data-hero="display" data-kind="payments">
+    <div class="prev" style="background:#ffffff;color:#030303;border-color:#030303">
+      <div class="p-nav"><span style="font-family:'Founders Grotesk', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">Abel</span>
+        <i style="background:#030303;border-radius:0px"></i></div>
+      <div class="p-body p-display">
+        <b style="font-family:'Founders Grotesk', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">Billing that survives contact with reality</b>
+        <em>Usage billing, retries and payouts on a double-entry ledger you can audit </em>
+        <i class="p-btn" style="background:#030303;border-radius:0px"></i>
+      </div>
+    </div>
+    <div class="strip"><i style="background:#030303"></i><i style="background:#ffffff"></i><i style="background:#f6eada"></i><i style="background:#cccccc"></i><i style="background:#dad9d5"></i><i style="background:#807e81"></i></div>
+    <div class="meta">
+      <strong>Abel</strong>
+      <span>display · light · 6 colors</span>
+    </div>
+  </a>
+  <a class="tile" href="./094_aaru.html"
+     data-name="aaru" data-theme="dark"
+     data-hero="centered-panel" data-kind="security">
+    <div class="prev" style="background:#000000;color:#ffffff;border-color:#ffffff">
+      <div class="p-nav"><span style="font-family:'abcOracle', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">Aaru</span>
+        <i style="background:#ebfb10;border-radius:0px"></i></div>
+      <div class="p-body p-centered-panel">
+        <b style="font-family:'abcOracle', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">Evidence, not assurances</b>
+        <em>Policies as code, evidence gathered on schedule, and an audit package your</em>
+        <i class="p-btn" style="background:#ebfb10;border-radius:0px"></i>
+      </div>
+    </div>
+    <div class="strip"><i style="background:#000000"></i><i style="background:#0a0a0a"></i><i style="background:#18181b"></i><i style="background:#ffffff"></i><i style="background:#bababa"></i><i style="background:#9d9d9d"></i><i style="background:#858484"></i></div>
+    <div class="meta">
+      <strong>Aaru</strong>
+      <span>centered-panel · dark · 9 colors</span>
+    </div>
+  </a>
+  <a class="tile" href="./095_a16z_speedrun.html"
+     data-name="a16z speedrun" data-theme="light"
+     data-hero="centered" data-kind="payments">
+    <div class="prev" style="background:#e5e7eb;color:#000000;border-color:#c0c2c5">
+      <div class="p-nav"><span style="font-family:'messinaSans', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">a16z speedrun</span>
+        <i style="background:#00c6c6;border-radius:8px"></i></div>
+      <div class="p-body p-centered">
+        <b style="font-family:'messinaSans', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">Move money without the moving parts</b>
+        <em>Usage billing, retries and payouts on a double-entry ledger you can audit </em>
+        <i class="p-btn" style="background:#000000;border-radius:8px"></i>
+      </div>
+    </div>
+    <div class="strip"><i style="background:#e5e7eb"></i><i style="background:#000000"></i><i style="background:#ffffff"></i><i style="background:#e2dfd8"></i><i style="background:#5e5d5c"></i></div>
+    <div class="meta">
+      <strong>a16z speedrun</strong>
+      <span>centered · light · 5 colors</span>
+    </div>
+  </a>
+  <a class="tile" href="./096_acolorbright.html"
+     data-name="acolorbright" data-theme="light"
+     data-hero="editorial" data-kind="crm">
+    <div class="prev" style="background:#ffffff;color:#1a1a1a;border-color:#1a1a1a">
+      <div class="p-nav"><span style="font-family:'RiformaLLWeb', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">Acolorbright</span>
+        <i style="background:#262626;border-radius:8px"></i></div>
+      <div class="p-body p-editorial">
+        <b style="font-family:'RiformaLLWeb', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">The CRM your reps stop avoiding</b>
+        <em>A customer record that updates itself from the tools your team already liv</em>
+        <i class="p-btn" style="background:#262626;border-radius:8px"></i>
+      </div>
+    </div>
+    <div class="strip"><i style="background:#1a1a1a"></i><i style="background:#262626"></i><i style="background:#666666"></i><i style="background:#999999"></i><i style="background:#e6e6e6"></i><i style="background:#f2f2f2"></i><i style="background:#ffffff"></i></div>
+    <div class="meta">
+      <strong>Acolorbright</strong>
+      <span>editorial · light · 8 colors</span>
+    </div>
+  </a>
+  <a class="tile" href="./097_8returns.html"
+     data-name="8returns" data-theme="mixed"
+     data-hero="editorial" data-kind="design">
+    <div class="prev" style="background:#eef0f2;color:#051923;border-color:#e0e0e0">
+      <div class="p-nav"><span style="font-family:'roobert', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">8returns</span>
+        <i style="background:#6289ff;border-radius:32px"></i></div>
+      <div class="p-body p-editorial">
+        <b style="font-family:'roobert', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">One source, every surface</b>
+        <em>Version your tokens like code, see what each change touches, and validate </em>
+        <i class="p-btn" style="background:#6289ff;border-radius:32px"></i>
+      </div>
+    </div>
+    <div class="strip"><i style="background:#cfff69"></i><i style="background:#6289ff"></i><i style="background:#051923"></i><i style="background:#004853"></i><i style="background:#eef0f2"></i><i style="background:#27272a"></i><i style="background:#a1a1aa"></i></div>
+    <div class="meta">
+      <strong>8returns</strong>
+      <span>editorial · mixed · 9 colors</span>
+    </div>
+  </a>
+  <a class="tile" href="./098_abetterlou.html"
+     data-name="abetterlou" data-theme="dark"
+     data-hero="centered" data-kind="design">
+    <div class="prev" style="background:#0b0600;color:#fff1e0;border-color:#43392d">
+      <div class="p-nav"><span style="font-family:'PP Neue Montreal', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">Abetterlou</span>
+        <i style="background:#ffb442;border-radius:1162.8px"></i></div>
+      <div class="p-body p-centered">
+        <b style="font-family:'PP Neue Montreal', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">Design systems that stay in sync</b>
+        <em>Define tokens once and ship them to every surface — web, native and docs —</em>
+        <i class="p-btn" style="background:#ffb442;border-radius:1162.8px"></i>
+      </div>
+    </div>
+    <div class="strip"><i style="background:#140b00"></i><i style="background:#0b0600"></i><i style="background:#fff1e0"></i><i style="background:#f1f1f1"></i><i style="background:#43392d"></i><i style="background:#4f4538"></i><i style="background:#85796c"></i></div>
+    <div class="meta">
+      <strong>Abetterlou</strong>
+      <span>centered · dark · 9 colors</span>
+    </div>
+  </a>
+  <a class="tile" href="./099_21_tsi.html"
+     data-name="21 tsi" data-theme="dark"
+     data-hero="display" data-kind="analytics">
+    <div class="prev" style="background:#000000;color:#ffffff;border-color:#ffffff">
+      <div class="p-nav"><span style="font-family:'Saans', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">21 TSI</span>
+        <i style="background:#b62b1a;border-radius:70px"></i></div>
+      <div class="p-body p-display">
+        <b style="font-family:'Saans', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">Metrics that mean the same thing twice</b>
+        <em>Governed metrics, self-serve exploration, and alerts that page the person </em>
+        <i class="p-btn" style="background:#b62b1a;border-radius:70px"></i>
+      </div>
+    </div>
+    <div class="strip"><i style="background:#000000"></i><i style="background:#ffffff"></i><i style="background:#4d4d4d"></i><i style="background:#b62b1a"></i></div>
+    <div class="meta">
+      <strong>21 TSI</strong>
+      <span>display · dark · 4 colors</span>
+    </div>
+  </a>
+  <a class="tile" href="./100_angellist.html"
+     data-name="angellist" data-theme="light"
+     data-hero="editorial" data-kind="crm">
+    <div class="prev" style="background:#ccd5d6;color:#001d21;border-color:#abb8b9">
+      <div class="p-nav"><span style="font-family:'angellistDisplay', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">Angellist</span>
+        <i style="background:#002b31;border-radius:9999px"></i></div>
+      <div class="p-body p-editorial">
+        <b style="font-family:'angellistDisplay', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">Every touchpoint, one timeline</b>
+        <em>Every email, call and ticket on one timeline, with automations you can rea</em>
+        <i class="p-btn" style="background:#002b31;border-radius:9999px"></i>
+      </div>
+    </div>
+    <div class="strip"><i style="background:#001d21"></i><i style="background:#bdbbff"></i><i style="background:#ccd5d6"></i><i style="background:#ffffff"></i><i style="background:#f9f9f7"></i><i style="background:#eaebea"></i><i style="background:#647577"></i></div>
+    <div class="meta">
+      <strong>Angellist</strong>
+      <span>editorial · light · 13 colors</span>
+    </div>
+  </a>
+  <a class="tile" href="./101_11x_digital_workers.html"
+     data-name="11x– digital workers" data-theme="mixed"
+     data-hero="display" data-kind="payments">
+    <div class="prev" style="background:#ffffff;color:#000000;border-color:#e1dad9">
+      <div class="p-nav"><span style="font-family:'ES Allianz', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">11x– Digital workers</span>
+        <i style="background:#0b252a;border-radius:999px"></i></div>
+      <div class="p-body p-display">
+        <b style="font-family:'ES Allianz', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">Revenue that reconciles itself</b>
+        <em>Take payments in 40 markets on local rails, and close the books without a </em>
+        <i class="p-btn" style="background:#000000;border-radius:999px"></i>
+      </div>
+    </div>
+    <div class="strip"><i style="background:#000000"></i><i style="background:#ffffff"></i><i style="background:#0b252a"></i><i style="background:#f6f5f5"></i><i style="background:#f5ece5"></i><i style="background:#ede2d7"></i><i style="background:#d7cecc"></i></div>
+    <div class="meta">
+      <strong>11x– Digital workers</strong>
+      <span>display · mixed · 16 colors</span>
+    </div>
+  </a>
+  <a class="tile" href="./102_dot_connect.html"
+     data-name="(dot)connect" data-theme="light"
+     data-hero="display" data-kind="content">
+    <div class="prev" style="background:#fcfbf8;color:#001011;border-color:#c1c4c2">
+      <div class="p-nav"><span style="font-family:'AeonikPro', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">(dot)connect</span>
+        <i style="background:#fd5321;border-radius:48px"></i></div>
+      <div class="p-body p-display">
+        <b style="font-family:'AeonikPro', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">Content operations, unblocked</b>
+        <em>Localize per field, preview the real page, and invalidate the edge cache t</em>
+        <i class="p-btn" style="background:#001011;border-radius:48px"></i>
+      </div>
+    </div>
+    <div class="strip"><i style="background:#fcfbf8"></i><i style="background:#001011"></i><i style="background:#0f1e1f"></i><i style="background:#ededea"></i><i style="background:#c1c4c2"></i><i style="background:#fd5321"></i><i style="background:#007aff"></i></div>
+    <div class="meta">
+      <strong>(dot)connect</strong>
+      <span>display · light · 7 colors</span>
+    </div>
+  </a>
+  <a class="tile" href="./103_letters.html"
+     data-name="letters" data-theme="light"
+     data-hero="centered" data-kind="infra">
+    <div class="prev" style="background:#ffffff;color:#070709;border-color:#000000">
+      <div class="p-nav"><span style="font-family:'sans-serif', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">Letters</span>
+        <i style="background:#2597d0;border-radius:48px"></i></div>
+      <div class="p-body p-centered">
+        <b style="font-family:'sans-serif', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">From commit to edge in eight seconds</b>
+        <em>Thirty regions, sub-40ms cold starts, and autoscaling to zero between requ</em>
+        <i class="p-btn" style="background:#070709;border-radius:48px"></i>
+      </div>
+    </div>
+    <div class="strip"><i style="background:#070709"></i><i style="background:#ffffff"></i><i style="background:#f5f5f5"></i><i style="background:#d7e6f5"></i><i style="background:#60606c"></i><i style="background:#8b8b8b"></i><i style="background:#151515"></i></div>
+    <div class="meta">
+      <strong>Letters</strong>
+      <span>centered · light · 8 colors</span>
+    </div>
+  </a>
+  <a class="tile" href="./104_huly.html"
+     data-name="huly" data-theme="mixed"
+     data-hero="split" data-kind="design">
+    <div class="prev" style="background:#303236;color:#ffffff;border-color:#4a4b50">
+      <div class="p-nav"><span style="font-family:'Inter', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">Huly</span>
+        <i style="background:#5683da;border-radius:9999px"></i></div>
+      <div class="p-body p-split">
+        <b style="font-family:'Inter', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">Design systems that stay in sync</b>
+        <em>Define tokens once and ship them to every surface — web, native and docs —</em>
+        <i class="p-btn" style="background:#5683da;border-radius:9999px"></i>
+      </div>
+    </div>
+    <div class="strip"><i style="background:#303236"></i><i style="background:#090a0c"></i><i style="background:#111111"></i><i style="background:#4a4b50"></i><i style="background:#6b6c6d"></i><i style="background:#95979e"></i><i style="background:#a9a9aa"></i></div>
+    <div class="meta">
+      <strong>Huly</strong>
+      <span>split · mixed · 13 colors</span>
+    </div>
+  </a>
+  <a class="tile" href="./105_ko_fi.html"
+     data-name="ko-fi" data-theme="light"
+     data-hero="split" data-kind="scheduling">
+    <div class="prev" style="background:#e5e7eb;color:#202020;border-color:#000000">
+      <div class="p-nav"><span style="font-family:'bogue-black', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">Ko-fi</span>
+        <i style="background:#72a4f2;border-radius:9999px"></i></div>
+      <div class="p-body p-split">
+        <b style="font-family:'bogue-black', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">Time, coordinated</b>
+        <em>Availability that respects focus time, time zones and the fact that nobody</em>
+        <i class="p-btn" style="background:#72a4f2;border-radius:9999px"></i>
+      </div>
+    </div>
+    <div class="strip"><i style="background:#e9dfd2"></i><i style="background:#e5e7eb"></i><i style="background:#202020"></i><i style="background:#000000"></i><i style="background:#ffffff"></i><i style="background:#aac9f7"></i><i style="background:#72a4f2"></i></div>
+    <div class="meta">
+      <strong>Ko-fi</strong>
+      <span>split · light · 7 colors</span>
+    </div>
+  </a>
+  <a class="tile" href="./106_pop_site.html"
+     data-name="pop site" data-theme="light"
+     data-hero="editorial" data-kind="design">
+    <div class="prev" style="background:#ffffff;color:#171717;border-color:#171717">
+      <div class="p-nav"><span style="font-family:'sans-serif', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">Pop Site</span>
+        <i style="background:#3b82f6;border-radius:999px"></i></div>
+      <div class="p-body p-editorial">
+        <b style="font-family:'sans-serif', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">One source, every surface</b>
+        <em>Author your design language once; publish it to CSS, Swift, Compose and Fi</em>
+        <i class="p-btn" style="background:#3b82f6;border-radius:999px"></i>
+      </div>
+    </div>
+    <div class="strip"><i style="background:#ffffff"></i><i style="background:#000000"></i><i style="background:#171717"></i><i style="background:#5e5e5e"></i><i style="background:#6e6e73"></i><i style="background:#d2d2d7"></i><i style="background:#e3eeff"></i></div>
+    <div class="meta">
+      <strong>Pop Site</strong>
+      <span>editorial · light · 9 colors</span>
+    </div>
+  </a>
+  <a class="tile" href="./107_made_with_gsap.html"
+     data-name="made with gsap" data-theme="light"
+     data-hero="editorial" data-kind="content">
+    <div class="prev" style="background:#f1f1f1;color:#121212;border-color:#121212">
+      <div class="p-nav"><span style="font-family:'LayGrotesk', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">Made With Gsap</span>
+        <i style="background:#121212;border-radius:2px"></i></div>
+      <div class="p-body p-editorial">
+        <b style="font-family:'LayGrotesk', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">From draft to edge in one click</b>
+        <em>Localize per field, preview the real page, and invalidate the edge cache t</em>
+        <i class="p-btn" style="background:#121212;border-radius:2px"></i>
+      </div>
+    </div>
+    <div class="strip"><i style="background:#c9fe6e"></i><i style="background:#f1f1f1"></i><i style="background:#121212"></i><i style="background:#252525"></i><i style="background:#777777"></i><i style="background:#1a1a1a"></i><i style="background:#ffffff"></i></div>
+    <div class="meta">
+      <strong>Made With Gsap</strong>
+      <span>editorial · light · 7 colors</span>
+    </div>
+  </a>
+  <a class="tile" href="./108_chat_for_impact.html"
+     data-name="chat for impact" data-theme="light"
+     data-hero="display" data-kind="security">
+    <div class="prev" style="background:#eee2ff;color:#000000;border-color:#e0e0e0">
+      <div class="p-nav"><span style="font-family:'DM Sans', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">Chat for impact</span>
+        <i style="background:#1dbf73;border-radius:40px"></i></div>
+      <div class="p-body p-display">
+        <b style="font-family:'DM Sans', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">Controls that check themselves</b>
+        <em>Policies as code, evidence gathered on schedule, and an audit package your</em>
+        <i class="p-btn" style="background:#ff643b;border-radius:40px"></i>
+      </div>
+    </div>
+    <div class="strip"><i style="background:#0a3922"></i><i style="background:#ff643b"></i><i style="background:#460095"></i><i style="background:#1dbf73"></i><i style="background:#003642"></i><i style="background:#f3b3fe"></i><i style="background:#00b4dc"></i></div>
+    <div class="meta">
+      <strong>Chat for impact</strong>
+      <span>display · light · 24 colors</span>
+    </div>
+  </a>
+  <a class="tile" href="./109_three.html"
+     data-name="three" data-theme="dark"
+     data-hero="centered-panel" data-kind="payments">
+    <div class="prev" style="background:#111111;color:#ffffff;border-color:#cacaca">
+      <div class="p-nav"><span style="font-family:'-apple-system, system-ui, sans-serif', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">Three</span>
+        <i style="background:#ff4300;border-radius:50px"></i></div>
+      <div class="p-body p-centered-panel">
+        <b style="font-family:'-apple-system, system-ui, sans-serif', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">Revenue that reconciles itself</b>
+        <em>Take payments in 40 markets on local rails, and close the books without a </em>
+        <i class="p-btn" style="background:#ff4300;border-radius:50px"></i>
+      </div>
+    </div>
+    <div class="strip"><i style="background:#ff4300"></i><i style="background:#111111"></i><i style="background:#181818"></i><i style="background:#2b2a2a"></i><i style="background:#343434"></i><i style="background:#666666"></i><i style="background:#8d8d8d"></i></div>
+    <div class="meta">
+      <strong>Three</strong>
+      <span>centered-panel · dark · 11 colors</span>
+    </div>
+  </a>
+  <a class="tile" href="./110_streamtime.html"
+     data-name="streamtime" data-theme="light"
+     data-hero="editorial" data-kind="design">
+    <div class="prev" style="background:#f1e8de;color:#000000;border-color:#000000">
+      <div class="p-nav"><span style="font-family:'Ease Standard', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">Streamtime</span>
+        <i style="background:#ff4dd5;border-radius:96px"></i></div>
+      <div class="p-body p-editorial">
+        <b style="font-family:'Ease Standard', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">Tokens in, products out</b>
+        <em>Author your design language once; publish it to CSS, Swift, Compose and Fi</em>
+        <i class="p-btn" style="background:#ff4dd5;border-radius:96px"></i>
+      </div>
+    </div>
+    <div class="strip"><i style="background:#ffde3b"></i><i style="background:#ff4dd5"></i><i style="background:#c1f32b"></i><i style="background:#6483ff"></i><i style="background:#c6dc3c"></i><i style="background:#ee84d5"></i><i style="background:#f1e8de"></i></div>
+    <div class="meta">
+      <strong>Streamtime</strong>
+      <span>editorial · light · 14 colors</span>
+    </div>
+  </a>
+  <a class="tile" href="./111_clutch_security.html"
+     data-name="clutch security" data-theme="light"
+     data-hero="split" data-kind="payments">
+    <div class="prev" style="background:#ffffff;color:#000000;border-color:#e5e7eb">
+      <div class="p-nav"><span style="font-family:'PP Radio Grotesk', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">Clutch Security</span>
+        <i style="background:#004dff;border-radius:60px"></i></div>
+      <div class="p-body p-split">
+        <b style="font-family:'PP Radio Grotesk', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">Billing that survives contact with reality</b>
+        <em>Usage billing, retries and payouts on a double-entry ledger you can audit </em>
+        <i class="p-btn" style="background:#004dff;border-radius:60px"></i>
+      </div>
+    </div>
+    <div class="strip"><i style="background:#004dff"></i><i style="background:#d9e4ff"></i><i style="background:#e6c5f7"></i><i style="background:#000000"></i><i style="background:#6e6e6e"></i><i style="background:#c9c9c9"></i><i style="background:#d9d9d9"></i></div>
+    <div class="meta">
+      <strong>Clutch Security</strong>
+      <span>split · light · 11 colors</span>
+    </div>
+  </a>
+  <a class="tile" href="./112_unicorn_studio.html"
+     data-name="unicorn studio" data-theme="dark"
+     data-hero="centered-panel" data-kind="payments">
+    <div class="prev" style="background:#08080a;color:#aeaac0;border-color:#aeaac0">
+      <div class="p-nav"><span style="font-family:'Overused Grotesk', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">Unicorn Studio</span>
+        <i style="background:#8960f0;border-radius:3px"></i></div>
+      <div class="p-body p-centered-panel">
+        <b style="font-family:'Overused Grotesk', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">The ledger that always balances</b>
+        <em>One API for cards, transfers and payouts across 40 markets, with reconcili</em>
+        <i class="p-btn" style="background:#8960f0;border-radius:3px"></i>
+      </div>
+    </div>
+    <div class="strip"><i style="background:#08080a"></i><i style="background:#0d0d12"></i><i style="background:#17171c"></i><i style="background:#25252d"></i><i style="background:#31313a"></i><i style="background:#62626f"></i><i style="background:#8b8e9c"></i></div>
+    <div class="meta">
+      <strong>Unicorn Studio</strong>
+      <span>centered-panel · dark · 11 colors</span>
+    </div>
+  </a>
+  <a class="tile" href="./113_vetric.html"
+     data-name="vetric" data-theme="light"
+     data-hero="split" data-kind="payments">
+    <div class="prev" style="background:#ffffff;color:#090a1e;border-color:#e0e0e0">
+      <div class="p-nav"><span style="font-family:'Noto Serif', ui-serif, Georgia, Cambria, "Times New Roman", Times, serif">Vetric</span>
+        <i style="background:#2969ff;border-radius:7px"></i></div>
+      <div class="p-body p-split">
+        <b style="font-family:'Noto Serif', ui-serif, Georgia, Cambria, "Times New Roman", Times, serif">One integration, forty markets</b>
+        <em>Take payments in 40 markets on local rails, and close the books without a </em>
+        <i class="p-btn" style="background:#090a1e;border-radius:7px"></i>
+      </div>
+    </div>
+    <div class="strip"><i style="background:#090a1e"></i><i style="background:#ffffff"></i><i style="background:#e0e0e0"></i><i style="background:#222222"></i><i style="background:#c3dae3"></i><i style="background:#000000"></i><i style="background:#f75cc3"></i></div>
+    <div class="meta">
+      <strong>Vetric</strong>
+      <span>split · light · 13 colors</span>
+    </div>
+  </a>
+  <a class="tile" href="./114_cap.html"
+     data-name="cap" data-theme="light"
+     data-hero="centered" data-kind="content">
+    <div class="prev" style="background:#fcfcfc;color:#202020;border-color:#e0e0e0">
+      <div class="p-nav"><span style="font-family:'defaultFont', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">Cap</span>
+        <i style="background:#0090ff;border-radius:9999px"></i></div>
+      <div class="p-body p-centered">
+        <b style="font-family:'defaultFont', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">Publishing without the bottleneck</b>
+        <em>Blocks with real schemas, workflows with real owners, and publishing that </em>
+        <i class="p-btn" style="background:#2563eb;border-radius:9999px"></i>
+      </div>
+    </div>
+    <div class="strip"><i style="background:#3b82f6"></i><i style="background:#2563eb"></i><i style="background:#202020"></i><i style="background:#000000"></i><i style="background:#fcfcfc"></i><i style="background:#f0f0f0"></i><i style="background:#e0e0e0"></i></div>
+    <div class="meta">
+      <strong>Cap</strong>
+      <span>centered · light · 22 colors</span>
+    </div>
+  </a>
+  <a class="tile" href="./115_cluely.html"
+     data-name="cluely" data-theme="light"
+     data-hero="centered-panel" data-kind="content">
+    <div class="prev" style="background:#ffffff;color:#18181b;border-color:#dadadb">
+      <div class="p-nav"><span style="font-family:'EB Garamond', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">Cluely</span>
+        <i style="background:#81b6ff;border-radius:110.25px"></i></div>
+      <div class="p-body p-centered-panel">
+        <b style="font-family:'EB Garamond', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">Write once, render anywhere</b>
+        <em>Localize per field, preview the real page, and invalidate the edge cache t</em>
+        <i class="p-btn" style="background:#3c83f6;border-radius:110.25px"></i>
+      </div>
+    </div>
+    <div class="strip"><i style="background:#3c83f6"></i><i style="background:#022c70"></i><i style="background:#0544a5"></i><i style="background:#81b6ff"></i><i style="background:#000000"></i><i style="background:#18181b"></i><i style="background:#2e3038"></i></div>
+    <div class="meta">
+      <strong>Cluely</strong>
+      <span>centered-panel · light · 17 colors</span>
+    </div>
+  </a>
+  <a class="tile" href="./116_ditto.html"
+     data-name="ditto" data-theme="light"
+     data-hero="centered" data-kind="security">
+    <div class="prev" style="background:#f9fbf2;color:#130e30;border-color:#130e30">
+      <div class="p-nav"><span style="font-family:'Hedvig Letters Serif', ui-serif, Georgia, Cambria, "Times New Roman", Times, serif">Ditto</span>
+        <i style="background:#e261e5;border-radius:48px"></i></div>
+      <div class="p-body p-centered">
+        <b style="font-family:'Hedvig Letters Serif', ui-serif, Georgia, Cambria, "Times New Roman", Times, serif">Evidence, not assurances</b>
+        <em>Fourteen hundred controls checked continuously — not once a year, the week</em>
+        <i class="p-btn" style="background:#e261e5;border-radius:48px"></i>
+      </div>
+    </div>
+    <div class="strip"><i style="background:#130e30"></i><i style="background:#ffe228"></i><i style="background:#59e25d"></i><i style="background:#e261e5"></i><i style="background:#5f5c6e"></i><i style="background:#f9fbf2"></i><i style="background:#eff2e5"></i></div>
+    <div class="meta">
+      <strong>Ditto</strong>
+      <span>centered · light · 9 colors</span>
+    </div>
+  </a>
+  <a class="tile" href="./117_operate.html"
+     data-name="operate" data-theme="light"
+     data-hero="split" data-kind="payments">
+    <div class="prev" style="background:#e0e0e0;color:#09352e;border-color:#cad3d2">
+      <div class="p-nav"><span style="font-family:'denim', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">Operate</span>
+        <i style="background:#007010;border-radius:12px"></i></div>
+      <div class="p-body p-split">
+        <b style="font-family:'denim', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">Revenue that reconciles itself</b>
+        <em>Take payments in 40 markets on local rails, and close the books without a </em>
+        <i class="p-btn" style="background:#007010;border-radius:12px"></i>
+      </div>
+    </div>
+    <div class="strip"><i style="background:#09352e"></i><i style="background:#ffffff"></i><i style="background:#e0e0e0"></i><i style="background:#e5e5e5"></i><i style="background:#77aa83"></i><i style="background:#cad3d2"></i><i style="background:#6c7a79"></i></div>
+    <div class="meta">
+      <strong>Operate</strong>
+      <span>split · light · 13 colors</span>
+    </div>
+  </a>
+  <a class="tile" href="./118_anything.html"
+     data-name="anything" data-theme="light"
+     data-hero="editorial" data-kind="scheduling">
+    <div class="prev" style="background:#ffffff;color:#18191b;border-color:#c4c4c4">
+      <div class="p-nav"><span style="font-family:'Inter', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">Anything</span>
+        <i style="background:#448f52;border-radius:9999px"></i></div>
+      <div class="p-body p-editorial">
+        <b style="font-family:'Inter', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">Calendars that respect focus</b>
+        <em>Round-robin that distributes fairly, reminders on the channel each person </em>
+        <i class="p-btn" style="background:#448f52;border-radius:9999px"></i>
+      </div>
+    </div>
+    <div class="strip"><i style="background:#000000"></i><i style="background:#18191b"></i><i style="background:#6a6a6c"></i><i style="background:#7d7f80"></i><i style="background:#bbbbbb"></i><i style="background:#c4c4c4"></i><i style="background:#dbdbdb"></i></div>
+    <div class="meta">
+      <strong>Anything</strong>
+      <span>editorial · light · 12 colors</span>
+    </div>
+  </a>
+  <a class="tile" href="./119_ai_for_business.html"
+     data-name="ai for business" data-theme="light"
+     data-hero="editorial" data-kind="payments">
+    <div class="prev" style="background:#e5e5e5;color:#000000;border-color:#c6c6c6">
+      <div class="p-nav"><span style="font-family:'SuisseIntlCond', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">AI for Business</span>
+        <i style="background:#000000;border-radius:48px"></i></div>
+      <div class="p-body p-editorial">
+        <b style="font-family:'SuisseIntlCond', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">Billing complexity, quietly absorbed</b>
+        <em>One API for cards, transfers and payouts across 40 markets, with reconcili</em>
+        <i class="p-btn" style="background:#000000;border-radius:48px"></i>
+      </div>
+    </div>
+    <div class="strip"><i style="background:#000000"></i><i style="background:#ffffff"></i><i style="background:#e5e5e5"></i><i style="background:#f3f3f3"></i><i style="background:#c6c6c6"></i><i style="background:#979797"></i><i style="background:#444444"></i></div>
+    <div class="meta">
+      <strong>AI for Business</strong>
+      <span>editorial · light · 10 colors</span>
+    </div>
+  </a>
+  <a class="tile" href="./120_paradigm.html"
+     data-name="paradigm" data-theme="light"
+     data-hero="centered" data-kind="security">
+    <div class="prev" style="background:#ffffff;color:#080b12;border-color:#dbdbee">
+      <div class="p-nav"><span style="font-family:'Atacama VAR', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">Paradigm</span>
+        <i style="background:#0a33ff;border-radius:100px"></i></div>
+      <div class="p-body p-centered">
+        <b style="font-family:'Atacama VAR', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">See the blast radius before it happens</b>
+        <em>Policies as code, evidence gathered on schedule, and an audit package your</em>
+        <i class="p-btn" style="background:#7f90ce;border-radius:100px"></i>
+      </div>
+    </div>
+    <div class="strip"><i style="background:#080b12"></i><i style="background:#ffffff"></i><i style="background:#f6f7f8"></i><i style="background:#edeef1"></i><i style="background:#d9d9d9"></i><i style="background:#dbdbee"></i><i style="background:#b5b9c4"></i></div>
+    <div class="meta">
+      <strong>Paradigm</strong>
+      <span>centered · light · 30 colors</span>
+    </div>
+  </a>
+  <a class="tile" href="./121_portal.html"
+     data-name="portal" data-theme="light"
+     data-hero="editorial" data-kind="crm">
+    <div class="prev" style="background:#f7f7f7;color:#000000;border-color:#000000">
+      <div class="p-nav"><span style="font-family:'Perfectly Nineties Regular', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">Portal</span>
+        <i style="background:#007aff;border-radius:50px"></i></div>
+      <div class="p-body p-editorial">
+        <b style="font-family:'Perfectly Nineties Regular', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">Your pipeline, finally legible</b>
+        <em>Every email, call and ticket on one timeline, with automations you can rea</em>
+        <i class="p-btn" style="background:#007aff;border-radius:50px"></i>
+      </div>
+    </div>
+    <div class="strip"><i style="background:#007aff"></i><i style="background:#000000"></i><i style="background:#3e3e3e"></i><i style="background:#636363"></i><i style="background:#ffffff"></i><i style="background:#f7f7f7"></i></div>
+    <div class="meta">
+      <strong>Portal</strong>
+      <span>editorial · light · 6 colors</span>
+    </div>
+  </a>
+  <a class="tile" href="./122_geniestudio.html"
+     data-name="geniestudio" data-theme="light"
+     data-hero="display" data-kind="content">
+    <div class="prev" style="background:#ebf5ff;color:#0a0d12;border-color:#0069e0">
+      <div class="p-nav"><span style="font-family:'Aeonik', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">Geniestudio</span>
+        <i style="background:#0069e0;border-radius:90px"></i></div>
+      <div class="p-body p-display">
+        <b style="font-family:'Aeonik', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">Content operations, unblocked</b>
+        <em>Blocks with real schemas, workflows with real owners, and publishing that </em>
+        <i class="p-btn" style="background:#181d27;border-radius:90px"></i>
+      </div>
+    </div>
+    <div class="strip"><i style="background:#ebf5ff"></i><i style="background:#ffffff"></i><i style="background:#fafdff"></i><i style="background:#f6f7f8"></i><i style="background:#0a0d12"></i><i style="background:#181d27"></i><i style="background:#535862"></i></div>
+    <div class="meta">
+      <strong>Geniestudio</strong>
+      <span>display · light · 13 colors</span>
+    </div>
+  </a>
+  <a class="tile" href="./123_brainfish.html"
+     data-name="brainfish" data-theme="light"
+     data-hero="editorial" data-kind="security">
+    <div class="prev" style="background:#ffffff;color:#262626;border-color:#e5e5e5">
+      <div class="p-nav"><span style="font-family:'Geist', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">Brainfish</span>
+        <i style="background:#262626;border-radius:999px"></i></div>
+      <div class="p-body p-editorial">
+        <b style="font-family:'Geist', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">See the blast radius before it happens</b>
+        <em>Policies as code, evidence gathered on schedule, and an audit package your</em>
+        <i class="p-btn" style="background:#262626;border-radius:999px"></i>
+      </div>
+    </div>
+    <div class="strip"><i style="background:#a3e635"></i><i style="background:#ffffff"></i><i style="background:#fcfff7"></i><i style="background:#262626"></i><i style="background:#000000"></i><i style="background:#303030"></i><i style="background:#e5e5e5"></i></div>
+    <div class="meta">
+      <strong>Brainfish</strong>
+      <span>editorial · light · 11 colors</span>
+    </div>
+  </a>
+  <a class="tile" href="./124_react_email.html"
+     data-name="react email" data-theme="dark"
+     data-hero="editorial" data-kind="payments">
+    <div class="prev" style="background:#000000;color:#ffffff;border-color:#27272a">
+      <div class="p-nav"><span style="font-family:'Inter', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">React Email</span>
+        <i style="background:#52e1fe;border-radius:8px"></i></div>
+      <div class="p-body p-editorial">
+        <b style="font-family:'Inter', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">Charge, reconcile, sleep</b>
+        <em>One API for cards, transfers and payouts across 40 markets, with reconcili</em>
+        <i class="p-btn" style="background:#ffffff;border-radius:8px"></i>
+      </div>
+    </div>
+    <div class="strip"><i style="background:#000000"></i><i style="background:#0f0f10"></i><i style="background:#27272a"></i><i style="background:#e5e7eb"></i><i style="background:#ffffff"></i><i style="background:#abafb4"></i><i style="background:#6e727a"></i></div>
+    <div class="meta">
+      <strong>React Email</strong>
+      <span>editorial · dark · 14 colors</span>
+    </div>
+  </a>
+  <a class="tile" href="./125_era.html"
+     data-name="era" data-theme="light"
+     data-hero="centered-panel" data-kind="infra">
+    <div class="prev" style="background:#f3f3f1;color:#191a17;border-color:#e6e6e4">
+      <div class="p-nav"><span style="font-family:'Saans VF', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">Era</span>
+        <i style="background:#9dbebe;border-radius:9999px"></i></div>
+      <div class="p-body p-centered-panel">
+        <b style="font-family:'Saans VF', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">The platform that stops asking for attention</b>
+        <em>Global runtime with instant rollbacks, preview environments per branch, an</em>
+        <i class="p-btn" style="background:#191a17;border-radius:9999px"></i>
+      </div>
+    </div>
+    <div class="strip"><i style="background:#191a17"></i><i style="background:#f3f3f1"></i><i style="background:#e6e6e4"></i><i style="background:#ffffff"></i><i style="background:#868784"></i><i style="background:#3d3d3d"></i><i style="background:#add2d1"></i></div>
+    <div class="meta">
+      <strong>Era</strong>
+      <span>centered-panel · light · 8 colors</span>
+    </div>
+  </a>
+  <a class="tile" href="./126_outseta.html"
+     data-name="outseta" data-theme="light"
+     data-hero="editorial" data-kind="scheduling">
+    <div class="prev" style="background:#ffffff;color:#240029;border-color:#d4ccd4">
+      <div class="p-nav"><span style="font-family:'Inter Var', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">Outseta</span>
+        <i style="background:#ef4444;border-radius:64px"></i></div>
+      <div class="p-body p-editorial">
+        <b style="font-family:'Inter Var', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">Availability that thinks ahead</b>
+        <em>Round-robin that distributes fairly, reminders on the channel each person </em>
+        <i class="p-btn" style="background:#df37a7;border-radius:64px"></i>
+      </div>
+    </div>
+    <div class="strip"><i style="background:#240029"></i><i style="background:#df37a7"></i><i style="background:#6d526d"></i><i style="background:#ffcc11"></i><i style="background:#d4ccd4"></i><i style="background:#222222"></i><i style="background:#bbadbb"></i></div>
+    <div class="meta">
+      <strong>Outseta</strong>
+      <span>editorial · light · 15 colors</span>
+    </div>
+  </a>
+  <a class="tile" href="./127_qatchup.html"
+     data-name="qatchup" data-theme="light"
+     data-hero="centered" data-kind="design">
+    <div class="prev" style="background:#fafafa;color:#080808;border-color:#696969">
+      <div class="p-nav"><span style="font-family:'Aspekta', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">Qatchup</span>
+        <i style="background:#222222;border-radius:100px"></i></div>
+      <div class="p-body p-centered">
+        <b style="font-family:'Aspekta', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">One source, every surface</b>
+        <em>Define tokens once and ship them to every surface — web, native and docs —</em>
+        <i class="p-btn" style="background:#292929;border-radius:100px"></i>
+      </div>
+    </div>
+    <div class="strip"><i style="background:#080808"></i><i style="background:#222222"></i><i style="background:#292929"></i><i style="background:#696969"></i><i style="background:#999999"></i><i style="background:#b2b2b2"></i><i style="background:#8d8d8d"></i></div>
+    <div class="meta">
+      <strong>Qatchup</strong>
+      <span>centered · light · 11 colors</span>
+    </div>
+  </a>
+  <a class="tile" href="./128_merlin.html"
+     data-name="merlin" data-theme="light"
+     data-hero="centered" data-kind="design">
+    <div class="prev" style="background:#f5f5f4;color:#000000;border-color:#eeeeee">
+      <div class="p-nav"><span style="font-family:'Inter', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">Merlin</span>
+        <i style="background:#34c759;border-radius:60px"></i></div>
+      <div class="p-body p-centered">
+        <b style="font-family:'Inter', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">One source, every surface</b>
+        <em>Version your tokens like code, see what each change touches, and validate </em>
+        <i class="p-btn" style="background:#34c759;border-radius:60px"></i>
+      </div>
+    </div>
+    <div class="strip"><i style="background:#f5f5f4"></i><i style="background:#ffffff"></i><i style="background:#fdf8f7"></i><i style="background:#000000"></i><i style="background:#1c1d1f"></i><i style="background:#6a6b6c"></i><i style="background:#808080"></i></div>
+    <div class="meta">
+      <strong>Merlin</strong>
+      <span>centered · light · 13 colors</span>
+    </div>
+  </a>
+  <a class="tile" href="./129_cora.html"
+     data-name="cora" data-theme="light"
+     data-hero="editorial" data-kind="security">
+    <div class="prev" style="background:#ffffff;color:#2b2b2b;border-color:#dadada">
+      <div class="p-nav"><span style="font-family:'switzer', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">Cora</span>
+        <i style="background:#cf372d;border-radius:9999px"></i></div>
+      <div class="p-body p-editorial">
+        <b style="font-family:'switzer', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">Audits that stop being fire drills</b>
+        <em>Fourteen hundred controls checked continuously — not once a year, the week</em>
+        <i class="p-btn" style="background:#09426c;border-radius:9999px"></i>
+      </div>
+    </div>
+    <div class="strip"><i style="background:#117bc8"></i><i style="background:#0d5c96"></i><i style="background:#60a8dd"></i><i style="background:#09426c"></i><i style="background:#cf372d"></i><i style="background:#ffffff"></i><i style="background:#ebebeb"></i></div>
+    <div class="meta">
+      <strong>Cora</strong>
+      <span>editorial · light · 12 colors</span>
+    </div>
+  </a>
+  <a class="tile" href="./130_control.html"
+     data-name="control" data-theme="light"
+     data-hero="editorial" data-kind="analytics">
+    <div class="prev" style="background:#ffffff;color:#000000;border-color:#000000">
+      <div class="p-nav"><span style="font-family:'Melange', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">Control</span>
+        <i style="background:#ff5c02;border-radius:273px"></i></div>
+      <div class="p-body p-editorial">
+        <b style="font-family:'Melange', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">Stop arguing about the numbers</b>
+        <em>Governed metrics, self-serve exploration, and alerts that page the person </em>
+        <i class="p-btn" style="background:#ff5c02;border-radius:273px"></i>
+      </div>
+    </div>
+    <div class="strip"><i style="background:#000000"></i><i style="background:#ffffff"></i><i style="background:#d2d2d2"></i><i style="background:#3d3d3d"></i><i style="background:#c6c6c0"></i><i style="background:#babab9"></i><i style="background:#acaca6"></i></div>
+    <div class="meta">
+      <strong>Control</strong>
+      <span>editorial · light · 14 colors</span>
+    </div>
+  </a>
+  <a class="tile" href="./131_sparkles.html"
+     data-name="sparkles" data-theme="light"
+     data-hero="centered" data-kind="infra">
+    <div class="prev" style="background:#ffffff;color:#0a0a0a;border-color:#e5e5e5">
+      <div class="p-nav"><span style="font-family:'Gelica', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">Sparkles</span>
+        <i style="background:#54b16c;border-radius:10px"></i></div>
+      <div class="p-body p-centered">
+        <b style="font-family:'Gelica', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">Deploy in seconds, roll back in one</b>
+        <em>Push a branch, get an environment. Merge it, and it disappears. Roll back </em>
+        <i class="p-btn" style="background:#18181b;border-radius:10px"></i>
+      </div>
+    </div>
+    <div class="strip"><i style="background:#0a0a0a"></i><i style="background:#18181b"></i><i style="background:#27272a"></i><i style="background:#3f3f46"></i><i style="background:#52525c"></i><i style="background:#71717b"></i><i style="background:#d4d4d8"></i></div>
+    <div class="meta">
+      <strong>Sparkles</strong>
+      <span>centered · light · 12 colors</span>
+    </div>
+  </a>
+  <a class="tile" href="./132_relace.html"
+     data-name="relace" data-theme="light"
+     data-hero="centered" data-kind="content">
+    <div class="prev" style="background:#fffef2;color:#191918;border-color:#000000">
+      <div class="p-nav"><span style="font-family:'sans-serif', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">Relace</span>
+        <i style="background:#fcaa2d;border-radius:800px"></i></div>
+      <div class="p-body p-centered">
+        <b style="font-family:'sans-serif', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">Content that ships itself</b>
+        <em>Localize per field, preview the real page, and invalidate the edge cache t</em>
+        <i class="p-btn" style="background:#fcaa2d;border-radius:800px"></i>
+      </div>
+    </div>
+    <div class="strip"><i style="background:#fffef2"></i><i style="background:#191918"></i><i style="background:#000000"></i><i style="background:#75756f"></i><i style="background:#edece0"></i><i style="background:#bab9b0"></i><i style="background:#fcaa2d"></i></div>
+    <div class="meta">
+      <strong>Relace</strong>
+      <span>centered · light · 7 colors</span>
+    </div>
+  </a>
+  <a class="tile" href="./133_subframe.html"
+     data-name="subframe" data-theme="light"
+     data-hero="centered" data-kind="analytics">
+    <div class="prev" style="background:#fafafa;color:#171717;border-color:#e5e7eb">
+      <div class="p-nav"><span style="font-family:'Inter', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">Subframe</span>
+        <i style="background:#171717;border-radius:9999px"></i></div>
+      <div class="p-body p-centered">
+        <b style="font-family:'Inter', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">Stop arguing about the numbers</b>
+        <em>Query your warehouse directly, define each metric once, and let anyone ans</em>
+        <i class="p-btn" style="background:#242424;border-radius:9999px"></i>
+      </div>
+    </div>
+    <div class="strip"><i style="background:#fafafa"></i><i style="background:#e5e7eb"></i><i style="background:#ededed"></i><i style="background:#dadada"></i><i style="background:#242424"></i><i style="background:#171717"></i><i style="background:#5c5c5c"></i></div>
+    <div class="meta">
+      <strong>Subframe</strong>
+      <span>centered · light · 8 colors</span>
+    </div>
+  </a>
+  <a class="tile" href="./134_zkpass.html"
+     data-name="zkpass" data-theme="dark"
+     data-hero="split" data-kind="crm">
+    <div class="prev" style="background:#060606;color:#ffffff;border-color:#252525">
+      <div class="p-nav"><span style="font-family:'PT Serif', ui-serif, Georgia, Cambria, "Times New Roman", Times, serif">zkPass</span>
+        <i style="background:#c5ff4a;border-radius:4px"></i></div>
+      <div class="p-body p-split">
+        <b style="font-family:'PT Serif', ui-serif, Georgia, Cambria, "Times New Roman", Times, serif">The CRM your reps stop avoiding</b>
+        <em>Pipeline hygiene that maintains itself, and forecasts that show exactly ho</em>
+        <i class="p-btn" style="background:#c5ff4a;border-radius:4px"></i>
+      </div>
+    </div>
+    <div class="strip"><i style="background:#000000"></i><i style="background:#060606"></i><i style="background:#252525"></i><i style="background:#1f1f1f"></i><i style="background:#313131"></i><i style="background:#3d3d3d"></i><i style="background:#525252"></i></div>
+    <div class="meta">
+      <strong>zkPass</strong>
+      <span>split · dark · 15 colors</span>
+    </div>
+  </a>
+  <a class="tile" href="./135_juicebox_ai.html"
+     data-name="juicebox.ai" data-theme="light"
+     data-hero="split" data-kind="scheduling">
+    <div class="prev" style="background:#f8f6f8;color:#1d161d;border-color:#d9d9d9">
+      <div class="p-nav"><span style="font-family:'sans-serif', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">Juicebox.ai</span>
+        <i style="background:#6a2f8d;border-radius:2px"></i></div>
+      <div class="p-body p-split">
+        <b style="font-family:'sans-serif', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">The meeting that books itself</b>
+        <em>Round-robin that distributes fairly, reminders on the channel each person </em>
+        <i class="p-btn" style="background:#6a2f8d;border-radius:2px"></i>
+      </div>
+    </div>
+    <div class="strip"><i style="background:#6a2f8d"></i><i style="background:#eee8fd"></i><i style="background:#da9efd"></i><i style="background:#2f8d6e"></i><i style="background:#1d161d"></i><i style="background:#2a232a"></i><i style="background:#574e57"></i></div>
+    <div class="meta">
+      <strong>Juicebox.ai</strong>
+      <span>split · light · 13 colors</span>
+    </div>
+  </a>
+  <a class="tile" href="./136_tedy.html"
+     data-name="tedy" data-theme="light"
+     data-hero="display" data-kind="content">
+    <div class="prev" style="background:#ffffff;color:#030712;border-color:#e5e7eb">
+      <div class="p-nav"><span style="font-family:'Montreal Neue', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">Tedy</span>
+        <i style="background:#fd1774;border-radius:48px"></i></div>
+      <div class="p-body p-display">
+        <b style="font-family:'Montreal Neue', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">Structure over soup</b>
+        <em>Blocks with real schemas, workflows with real owners, and publishing that </em>
+        <i class="p-btn" style="background:#fd1774;border-radius:48px"></i>
+      </div>
+    </div>
+    <div class="strip"><i style="background:#fd1774"></i><i style="background:#030712"></i><i style="background:#e3f7d6"></i><i style="background:#fff1cd"></i><i style="background:#ddf5fb"></i><i style="background:#f4efe9"></i><i style="background:#171717"></i></div>
+    <div class="meta">
+      <strong>Tedy</strong>
+      <span>display · light · 12 colors</span>
+    </div>
+  </a>
+  <a class="tile" href="./137_amra.html"
+     data-name="amra" data-theme="light"
+     data-hero="split" data-kind="security">
+    <div class="prev" style="background:#ffffff;color:#111111;border-color:#d9d9d9">
+      <div class="p-nav"><span style="font-family:'Primary Font', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">amra</span>
+        <i style="background:#acafff;border-radius:8px"></i></div>
+      <div class="p-body p-split">
+        <b style="font-family:'Primary Font', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">Always audit-ready, by construction</b>
+        <em>Policies as code, evidence gathered on schedule, and an audit package your</em>
+        <i class="p-btn" style="background:#acafff;border-radius:8px"></i>
+      </div>
+    </div>
+    <div class="strip"><i style="background:#141414"></i><i style="background:#ffffff"></i><i style="background:#a1a1a1"></i><i style="background:#8a8a8a"></i><i style="background:#d0d0d0"></i><i style="background:#acafff"></i></div>
+    <div class="meta">
+      <strong>amra</strong>
+      <span>split · light · 6 colors</span>
+    </div>
+  </a>
+  <a class="tile" href="./138_rally.html"
+     data-name="rally" data-theme="dark"
+     data-hero="display" data-kind="crm">
+    <div class="prev" style="background:#0d100d;color:#ffffff;border-color:#000000">
+      <div class="p-nav"><span style="font-family:'TikTok Sans Variable', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">Rally</span>
+        <i style="background:#ffffff;border-radius:24px"></i></div>
+      <div class="p-body p-display">
+        <b style="font-family:'TikTok Sans Variable', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">Your pipeline, finally legible</b>
+        <em>A customer record that updates itself from the tools your team already liv</em>
+        <i class="p-btn" style="background:#ffffff;border-radius:24px"></i>
+      </div>
+    </div>
+    <div class="strip"><i style="background:#0d100d"></i><i style="background:#08102b"></i><i style="background:#ffffff"></i><i style="background:#000000"></i></div>
+    <div class="meta">
+      <strong>Rally</strong>
+      <span>display · dark · 4 colors</span>
+    </div>
+  </a>
+  <a class="tile" href="./139_motherduck.html"
+     data-name="motherduck" data-theme="light"
+     data-hero="editorial" data-kind="scheduling">
+    <div class="prev" style="background:#f4efea;color:#383838;border-color:#383838">
+      <div class="p-nav"><span style="font-family:'Aeonik Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace">MotherDuck</span>
+        <i style="background:#6fc2ff;border-radius:2px"></i></div>
+      <div class="p-body p-editorial">
+        <b style="font-family:'Aeonik Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace">No more 4pm Friday calls</b>
+        <em>Availability that respects focus time, time zones and the fact that nobody</em>
+        <i class="p-btn" style="background:#6fc2ff;border-radius:2px"></i>
+      </div>
+    </div>
+    <div class="strip"><i style="background:#f4efea"></i><i style="background:#ffffff"></i><i style="background:#f8f8f7"></i><i style="background:#ebf9ff"></i><i style="background:#f9fbe7"></i><i style="background:#383838"></i><i style="background:#a1a1a1"></i></div>
+    <div class="meta">
+      <strong>MotherDuck</strong>
+      <span>editorial · light · 22 colors</span>
+    </div>
+  </a>
+  <a class="tile" href="./140_flox.html"
+     data-name="flox" data-theme="light"
+     data-hero="editorial" data-kind="crm">
+    <div class="prev" style="background:#ffffff;color:#020817;border-color:#e2e8f0">
+      <div class="p-nav"><span style="font-family:'GeistSans', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">Flox</span>
+        <i style="background:#8247ff;border-radius:6px"></i></div>
+      <div class="p-body p-editorial">
+        <b style="font-family:'GeistSans', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">Context, on every call</b>
+        <em>Every email, call and ticket on one timeline, with automations you can rea</em>
+        <i class="p-btn" style="background:#8247ff;border-radius:6px"></i>
+      </div>
+    </div>
+    <div class="strip"><i style="background:#020817"></i><i style="background:#e2e8f0"></i><i style="background:#ffffff"></i><i style="background:#1b1b1b"></i><i style="background:#f3f3f3"></i><i style="background:#0c0c0c"></i><i style="background:#8247ff"></i></div>
+    <div class="meta">
+      <strong>Flox</strong>
+      <span>editorial · light · 10 colors</span>
+    </div>
+  </a>
+  <a class="tile" href="./141_textla.html"
+     data-name="textla" data-theme="light"
+     data-hero="centered" data-kind="scheduling">
+    <div class="prev" style="background:#f2ee98;color:#10380b;border-color:#10380b">
+      <div class="p-nav"><span style="font-family:'National 2 Condensed', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">Textla</span>
+        <i style="background:#30be60;border-radius:1440px"></i></div>
+      <div class="p-body p-centered">
+        <b style="font-family:'National 2 Condensed', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">Availability that thinks ahead</b>
+        <em>Share one link. Everyone sees their own clock, buffers appear automaticall</em>
+        <i class="p-btn" style="background:#10380b;border-radius:1440px"></i>
+      </div>
+    </div>
+    <div class="strip"><i style="background:#f2ee98"></i><i style="background:#10380b"></i><i style="background:#fce519"></i><i style="background:#dbe8ac"></i><i style="background:#30be60"></i><i style="background:#fefde6"></i><i style="background:#ffffff"></i></div>
+    <div class="meta">
+      <strong>Textla</strong>
+      <span>centered · light · 7 colors</span>
+    </div>
+  </a>
+  <a class="tile" href="./142_penpot.html"
+     data-name="penpot" data-theme="mixed"
+     data-hero="centered-panel" data-kind="infra">
+    <div class="prev" style="background:#fafafa;color:#000000;border-color:#d2d2d2">
+      <div class="p-nav"><span style="font-family:'Work Sans', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">Penpot</span>
+        <i style="background:#1ccac7;border-radius:50px"></i></div>
+      <div class="p-body p-centered-panel">
+        <b style="font-family:'Work Sans', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">The platform that stops asking for attention</b>
+        <em>Push a branch, get an environment. Merge it, and it disappears. Roll back </em>
+        <i class="p-btn" style="background:#1ccac7;border-radius:50px"></i>
+      </div>
+    </div>
+    <div class="strip"><i style="background:#151035"></i><i style="background:#1ccac7"></i><i style="background:#2f226c"></i><i style="background:#fafafa"></i><i style="background:#eeeeee"></i><i style="background:#d3d3d3"></i><i style="background:#000000"></i></div>
+    <div class="meta">
+      <strong>Penpot</strong>
+      <span>centered-panel · mixed · 7 colors</span>
+    </div>
+  </a>
+  <a class="tile" href="./143_patch.html"
+     data-name="patch" data-theme="light"
+     data-hero="split" data-kind="security">
+    <div class="prev" style="background:#ffffff;color:#212121;border-color:#1f00ff">
+      <div class="p-nav"><span style="font-family:'PP Right', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">Patch</span>
+        <i style="background:#ff622b;border-radius:5px"></i></div>
+      <div class="p-body p-split">
+        <b style="font-family:'PP Right', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">Controls that check themselves</b>
+        <em>Policies as code, evidence gathered on schedule, and an audit package your</em>
+        <i class="p-btn" style="background:#ff622b;border-radius:5px"></i>
+      </div>
+    </div>
+    <div class="strip"><i style="background:#1f00ff"></i><i style="background:#ff622b"></i><i style="background:#ffffff"></i><i style="background:#f2f2f2"></i><i style="background:#f8f8f8"></i><i style="background:#ececec"></i><i style="background:#d3d3d3"></i></div>
+    <div class="meta">
+      <strong>Patch</strong>
+      <span>split · light · 8 colors</span>
+    </div>
+  </a>
+  <a class="tile" href="./144_buymeacoffee.html"
+     data-name="buymeacoffee" data-theme="light"
+     data-hero="centered" data-kind="design">
+    <div class="prev" style="background:#faf8f0;color:#000000;border-color:#e5e7eb">
+      <div class="p-nav"><span style="font-family:'ui-sans-serif', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">Buymeacoffee</span>
+        <i style="background:#d8573f;border-radius:48px"></i></div>
+      <div class="p-body p-centered">
+        <b style="font-family:'ui-sans-serif', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">Design decisions that survive handoff</b>
+        <em>Define tokens once and ship them to every surface — web, native and docs —</em>
+        <i class="p-btn" style="background:#d8573f;border-radius:48px"></i>
+      </div>
+    </div>
+    <div class="strip"><i style="background:#faf8f0"></i><i style="background:#ffffff"></i><i style="background:#e5e7eb"></i><i style="background:#000000"></i><i style="background:#222222"></i><i style="background:#717171"></i><i style="background:#ffdd00"></i></div>
+    <div class="meta">
+      <strong>Buymeacoffee</strong>
+      <span>centered · light · 10 colors</span>
+    </div>
+  </a>
+  <a class="tile" href="./145_impilo.html"
+     data-name="impilo" data-theme="dark"
+     data-hero="centered" data-kind="scheduling">
+    <div class="prev" style="background:#16165c;color:#ffffff;border-color:#4846c6">
+      <div class="p-nav"><span style="font-family:'Gilroy', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">Impilo</span>
+        <i style="background:#00b1ff;border-radius:1425.6px"></i></div>
+      <div class="p-body p-centered">
+        <b style="font-family:'Gilroy', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">Booking, reduced to one link</b>
+        <em>Availability that respects focus time, time zones and the fact that nobody</em>
+        <i class="p-btn" style="background:#5350cc;border-radius:1425.6px"></i>
+      </div>
+    </div>
+    <div class="strip"><i style="background:#16165c"></i><i style="background:#232269"></i><i style="background:#403cd5"></i><i style="background:#5350cc"></i><i style="background:#4846c6"></i><i style="background:#524fe1"></i><i style="background:#b1a6f6"></i></div>
+    <div class="meta">
+      <strong>Impilo</strong>
+      <span>centered · dark · 15 colors</span>
+    </div>
+  </a>
+  <a class="tile" href="./146_glyphy.html"
+     data-name="glyphy" data-theme="light"
+     data-hero="display" data-kind="crm">
+    <div class="prev" style="background:#fef9e6;color:#000000;border-color:#c7c3b4">
+      <div class="p-nav"><span style="font-family:'Arial', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">Glyphy</span>
+        <i style="background:#060606;border-radius:28px"></i></div>
+      <div class="p-body p-display">
+        <b style="font-family:'Arial', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">One record per customer, everywhere</b>
+        <em>Every email, call and ticket on one timeline, with automations you can rea</em>
+        <i class="p-btn" style="background:#060606;border-radius:28px"></i>
+      </div>
+    </div>
+    <div class="strip"><i style="background:#fef9e6"></i><i style="background:#000000"></i><i style="background:#060606"></i><i style="background:#c7c3b4"></i><i style="background:#8d8b80"></i><i style="background:#fdc331"></i><i style="background:#fe5722"></i></div>
+    <div class="meta">
+      <strong>Glyphy</strong>
+      <span>display · light · 10 colors</span>
+    </div>
+  </a>
+  <a class="tile" href="./147_automate_supplier_payments.html"
+     data-name="automate supplier payments" data-theme="light"
+     data-hero="centered" data-kind="analytics">
+    <div class="prev" style="background:#fff6d2;color:#000000;border-color:#000000">
+      <div class="p-nav"><span style="font-family:'sans-serif', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">Automate Supplier Payments</span>
+        <i style="background:#000000;border-radius:9999px"></i></div>
+      <div class="p-body p-centered">
+        <b style="font-family:'sans-serif', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">Your data, finally on speaking terms</b>
+        <em>Warehouse-native dashboards your whole team can read, without waiting on a</em>
+        <i class="p-btn" style="background:#000000;border-radius:9999px"></i>
+      </div>
+    </div>
+    <div class="strip"><i style="background:#fff6d2"></i><i style="background:#ffd801"></i><i style="background:#000000"></i><i style="background:#ffffff"></i><i style="background:#666664"></i><i style="background:#cccbc7"></i><i style="background:#dcdce6"></i></div>
+    <div class="meta">
+      <strong>Automate Supplier Payments</strong>
+      <span>centered · light · 7 colors</span>
+    </div>
+  </a>
+  <a class="tile" href="./148_hatch.html"
+     data-name="hatch" data-theme="light"
+     data-hero="centered-panel" data-kind="design">
+    <div class="prev" style="background:#f5f4f0;color:#000000;border-color:#000000">
+      <div class="p-nav"><span style="font-family:'Recoleta', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">Hatch</span>
+        <i style="background:#160042;border-radius:100px"></i></div>
+      <div class="p-body p-centered-panel">
+        <b style="font-family:'Recoleta', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">From token to production, one hop</b>
+        <em>Author your design language once; publish it to CSS, Swift, Compose and Fi</em>
+        <i class="p-btn" style="background:#160042;border-radius:100px"></i>
+      </div>
+    </div>
+    <div class="strip"><i style="background:#f5f4f0"></i><i style="background:#ffffff"></i><i style="background:#000000"></i><i style="background:#222222"></i><i style="background:#333333"></i><i style="background:#dddfe2"></i><i style="background:#99ffcc"></i></div>
+    <div class="meta">
+      <strong>Hatch</strong>
+      <span>centered-panel · light · 12 colors</span>
+    </div>
+  </a>
+  <a class="tile" href="./149_openserv.html"
+     data-name="openserv" data-theme="light"
+     data-hero="editorial" data-kind="scheduling">
+    <div class="prev" style="background:#ffffff;color:#000000;border-color:#a6a6a6">
+      <div class="p-nav"><span style="font-family:'sans-serif', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">OpenServ</span>
+        <i style="background:#5f79ff;border-radius:100px"></i></div>
+      <div class="p-body p-editorial">
+        <b style="font-family:'sans-serif', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">No more 4pm Friday calls</b>
+        <em>Round-robin that distributes fairly, reminders on the channel each person </em>
+        <i class="p-btn" style="background:#5f79ff;border-radius:100px"></i>
+      </div>
+    </div>
+    <div class="strip"><i style="background:#5f79ff"></i><i style="background:#01fe93"></i><i style="background:#ffffff"></i><i style="background:#000000"></i><i style="background:#f5f5f5"></i><i style="background:#a6a6a6"></i><i style="background:#4d4d4d"></i></div>
+    <div class="meta">
+      <strong>OpenServ</strong>
+      <span>editorial · light · 9 colors</span>
+    </div>
+  </a>
+  <a class="tile" href="./150_pirsch_analytics.html"
+     data-name="pirsch analytics" data-theme="light"
+     data-hero="split" data-kind="scheduling">
+    <div class="prev" style="background:#f8f5ed;color:#000000;border-color:#000000">
+      <div class="p-nav"><span style="font-family:'DM Sans', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">Pirsch Analytics</span>
+        <i style="background:#6ece9d;border-radius:24px"></i></div>
+      <div class="p-body p-split">
+        <b style="font-family:'DM Sans', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif">The meeting that books itself</b>
+        <em>Round-robin that distributes fairly, reminders on the channel each person </em>
+        <i class="p-btn" style="background:#6ece9d;border-radius:24px"></i>
+      </div>
+    </div>
+    <div class="strip"><i style="background:#ffda6e"></i><i style="background:#6ece9d"></i><i style="background:#f8f5ed"></i><i style="background:#000000"></i><i style="background:#707070"></i></div>
+    <div class="meta">
+      <strong>Pirsch Analytics</strong>
+      <span>split · light · 5 colors</span>
+    </div>
+  </a></div>
+<script>
+const q=document.getElementById('q'),th=document.getElementById('theme'),hr=document.getElementById('hero');
+const tiles=[...document.querySelectorAll('.tile')],count=document.getElementById('count');
+function apply(){
+  const t=q.value.trim().toLowerCase(),theme=th.value,hero=hr.value;let n=0;
+  for(const el of tiles){
+    const ok=(!t||el.dataset.name.includes(t))&&(!theme||el.dataset.theme===theme)&&(!hero||el.dataset.hero===hero);
+    el.style.display=ok?'':'none';if(ok)n++;
+  }
+  count.textContent=n+' of '+tiles.length;
+}
+for(const el of [q,th,hr]) el.addEventListener('input',apply);
+apply();
+</script>
+</body></html>

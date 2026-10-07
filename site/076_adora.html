@@ -1,0 +1,309 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Adora — template</title>
+<style>
+:root {
+  --bg:#ffffff; --fg:#353241; --accent:#592eff; --action:#592eff;
+  --on-accent:#ffffff; --on-fg:#ffffff;
+  --border:#e0e0db; --muted:#908e97; --surface:#f8f8f8; --alt:#f3f3f4;
+  --r-card:8px; --r-btn:48px; --r-sm:4px;
+  --maxw:1200px;
+  --font-display:'PolySans', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-body:'Plus Jakarta Sans', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+* { box-sizing:border-box; }
+html { scroll-behavior:smooth; }
+body { margin:0; background:var(--bg); color:var(--fg); font-family:var(--font-body);
+  line-height:1.6; -webkit-font-smoothing:antialiased; }
+img { max-width:100%; }
+.wrap { max-width:var(--maxw); margin:0 auto; padding:0 28px; }
+.wide { max-width:calc(var(--maxw) + 240px); margin:0 auto; padding:0 28px; }
+h1,h2,h3,h4 { font-family:var(--font-display); font-weight:500; line-height:1.08; margin:0; }
+p { margin:0; }
+a { color:inherit; }
+.muted { color:var(--muted); }
+
+/* toolbar */
+.tb { position:sticky; top:0; z-index:50; background:var(--bg); border-bottom:1px solid var(--border); font-size:12.5px; }
+.tb .wide { display:flex; align-items:center; gap:14px; height:46px; }
+.tb a { text-decoration:none; opacity:.65; }
+.tb a:hover { opacity:1; }
+.tb .sp { flex:1; }
+.tb .tag { border:1px solid var(--border); border-radius:99px; padding:2px 9px; opacity:.65; }
+
+/* nav */
+.nav { border-bottom:1px solid var(--border); }
+.nav .wrap { display:flex; align-items:center; gap:30px; height:76px; }
+.brand { font-family:var(--font-display); font-size:21px; font-weight:500; letter-spacing:-0.01em; }
+.nav-links { display:flex; gap:22px; font-size:14px; color:var(--muted); }
+.nav-links span { cursor:default; }
+.nav.split .nav-links { margin-left:auto; }
+.nav.centered .wrap { justify-content:center; position:relative; }
+.nav.centered .brand { position:absolute; left:28px; }
+.nav.pill .nav-links { margin-left:auto; background:var(--surface); border:1px solid var(--border);
+  border-radius:99px; padding:8px 18px; }
+.nav.rule { border-bottom:2px solid var(--fg); }
+.nav.minimal .nav-links { margin-left:auto; }
+.nav .cta-sm { margin-left:18px; }
+
+/* buttons */
+.btn { display:inline-block; padding:13px 26px; border-radius:var(--r-btn); font-size:15px;
+  text-decoration:none; border:1px solid var(--action); background:var(--action); color:var(--on-accent);
+  transition:opacity .15s; }
+.btn:hover { opacity:.86; }
+.btn.ghost { background:transparent; color:var(--fg); border-color:var(--border); }
+.btn.sm { padding:9px 18px; font-size:13.5px; }
+.eyebrow { display:inline-flex; align-items:center; gap:8px; font-size:12px; letter-spacing:.09em;
+  text-transform:uppercase; color:var(--muted); }
+.eyebrow.badge { color:var(--on-accent); background:var(--accent); padding:5px 12px;
+  border-radius:var(--r-btn); letter-spacing:.07em; }
+
+/* hero */
+.hero { padding:104px 0 84px; }
+.hero h1 { font-size:clamp(38px, 8vw, 38px); letter-spacing:-0.025em; }
+.hero .lede { font-size:19px; color:var(--muted); max-width:56ch; margin:24px 0 34px; }
+.btns { display:flex; gap:12px; flex-wrap:wrap; }
+
+.hero.centered { text-align:center; }
+.hero.centered h1 { max-width:18ch; margin:18px auto 0; }
+.hero.centered .lede { margin:24px auto 34px; }
+.hero.centered .btns { justify-content:center; }
+
+.hero.split .wrap { display:grid; grid-template-columns:1.05fr .95fr; gap:56px; align-items:center; }
+.hero.editorial .wrap { display:grid; grid-template-columns:1fr; gap:26px; }
+.hero.editorial h1 { max-width:14ch; }
+.hero.editorial .rule { height:1px; background:var(--border); margin:14px 0 6px; }
+.hero.editorial .cols { display:grid; grid-template-columns:1fr 1fr; gap:40px; padding-top:8px;
+  border-top:1px solid var(--border); }
+.hero.display { text-align:left; }
+.hero.display h1 { font-size:clamp(46px, 13vw, 38px); letter-spacing:-0.04em; line-height:.92;
+  max-width:none; }
+.hero.display .lede { max-width:46ch; }
+.hero.centered-panel { text-align:center; padding-bottom:0; }
+.hero.centered-panel h1 { max-width:17ch; margin:18px auto 0; }
+.hero.centered-panel .lede { margin:24px auto 34px; }
+.hero.centered-panel .btns { justify-content:center; }
+.hero.centered-panel .mock { margin:56px auto -60px; max-width:min(900px, 100%); }
+
+/* mock panel */
+.mock { border:1px solid var(--border); border-radius:min(var(--r-card), 14px); background:var(--surface);
+  overflow:hidden; box-shadow:0 18px 40px -28px rgba(0,0,0,.35); }
+.mk-bar { display:flex; gap:6px; padding:11px 14px; border-bottom:1px solid var(--border); background:var(--alt); }
+.mk-bar i { width:9px; height:9px; border-radius:99px; background:var(--border); }
+.mk-body { display:flex; min-height:190px; }
+.mk-side { width:23%; border-right:1px solid var(--border); padding:16px 12px; display:flex;
+  flex-direction:column; gap:11px; }
+.mk-side span { height:7px; border-radius:3px; background:var(--border); }
+.mk-side span:nth-child(2) { width:70%; } .mk-side span:nth-child(3) { width:84%; }
+.mk-side span:nth-child(4) { width:56%; }
+.mk-main { flex:1; padding:18px 18px; display:flex; flex-direction:column; gap:13px; }
+.mk-row { height:9px; border-radius:4px; background:var(--border); display:block; }
+
+/* sections */
+section { padding:76px 0; }
+section.hair { border-top:1px solid var(--border); }
+.sec-head { max-width:60ch; margin-bottom:38px; }
+.sec-head h2 { font-size:clamp(26px, 3.6vw, 40px); letter-spacing:-0.02em; }
+.sec-head p { color:var(--muted); margin-top:14px; font-size:17px; }
+
+.grid { display:grid; gap:20px; }
+.g3 { grid-template-columns:repeat(auto-fit, minmax(250px,1fr)); }
+.g4 { grid-template-columns:repeat(auto-fit, minmax(200px,1fr)); }
+.card { background:var(--surface); border:1px solid var(--border);
+  border-radius:min(var(--r-card), 26px); padding:26px; }
+.card h3 { font-size:17px; margin-bottom:9px; }
+.card p { color:var(--muted); font-size:14.5px; }
+
+/* logos */
+.logos { display:flex; flex-wrap:wrap; gap:14px 40px; align-items:center; justify-content:center;
+  opacity:.62; font-family:var(--font-display); font-size:19px; }
+.logos.band { border-block:1px solid var(--border); padding:26px 0; }
+
+/* stats */
+.stats { display:grid; grid-template-columns:repeat(auto-fit, minmax(150px,1fr)); gap:26px; }
+.stat b { display:block; font-family:var(--font-display); font-size:clamp(30px,4.4vw,46px);
+  font-weight:500; letter-spacing:-0.02em; line-height:1; }
+.stat span { display:block; color:var(--muted); font-size:13.5px; margin-top:9px; }
+
+/* alternating */
+.alt-row { display:grid; grid-template-columns:1fr 1fr; gap:56px; align-items:center; padding:34px 0; }
+.alt-row:nth-child(even) .alt-text { order:2; }
+.alt-text h3 { font-size:clamp(22px,2.6vw,29px); letter-spacing:-0.015em; margin-bottom:14px; }
+.alt-text p { color:var(--muted); }
+
+/* bento */
+.bento { display:grid; gap:16px; grid-template-columns:repeat(4,1fr); grid-auto-rows:158px; }
+.bento .card { display:flex; flex-direction:column; justify-content:flex-end; }
+.bento .card:nth-child(1) { grid-column:span 2; grid-row:span 2; }
+.bento .card:nth-child(2) { grid-column:span 2; }
+.bento .card:nth-child(3) { grid-column:span 1; }
+.bento .card:nth-child(4) { grid-column:span 1; }
+.bento .card:nth-child(5) { grid-column:span 2; }
+.bento .card:nth-child(6) { grid-column:span 2; }
+
+/* tabs */
+.tabs { display:flex; gap:2px; border-bottom:1px solid var(--border); margin-bottom:30px; flex-wrap:wrap; }
+.tab { padding:13px 20px; font-size:14.5px; color:var(--muted); border-bottom:2px solid transparent; }
+.tab.on { color:var(--fg); border-bottom-color:var(--accent); }
+
+/* showcase */
+.tiles { display:grid; gap:16px; grid-template-columns:repeat(auto-fill,minmax(210px,1fr)); }
+.tile { border:1px solid var(--border); border-radius:min(var(--r-card),20px); overflow:hidden;
+  background:var(--surface); }
+.tile .swatch { height:112px; }
+.tile .lab { padding:13px 15px; font-size:13.5px; display:flex; justify-content:space-between; gap:10px; }
+.tile .lab span { color:var(--muted); font-family:ui-monospace,Menlo,monospace; font-size:11.5px; }
+
+/* band */
+.band-sec { background:var(--fg); color:var(--on-fg); padding:74px 0; }
+.band-sec h2 { font-size:clamp(26px,3.6vw,40px); letter-spacing:-0.02em; max-width:20ch; }
+.band-sec p { color:var(--on-fg); opacity:.72; margin-top:16px; max-width:56ch; }
+
+/* quotes */
+.quotes { display:grid; gap:20px; grid-template-columns:repeat(auto-fit,minmax(290px,1fr)); }
+.quote { border:1px solid var(--border); border-radius:min(var(--r-card),24px); padding:30px;
+  background:var(--surface); }
+.quote blockquote { margin:0 0 20px; font-family:var(--font-display); font-size:19px; line-height:1.42;
+  letter-spacing:-0.01em; }
+.quote .who { font-size:13px; color:var(--muted); }
+.quote .who b { color:var(--fg); font-weight:500; }
+
+/* pricing */
+.tiers { display:grid; gap:18px; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); }
+.tier { border:1px solid var(--border); border-radius:min(var(--r-card),24px); padding:30px;
+  display:flex; flex-direction:column; gap:16px; }
+.tier.on { border-color:var(--accent); border-width:2px; }
+.tier .price { font-family:var(--font-display); font-size:40px; letter-spacing:-0.02em; }
+.tier ul { list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:9px;
+  color:var(--muted); font-size:14.5px; flex:1; }
+.tier li::before { content:"—"; margin-right:9px; opacity:.5; }
+
+/* faq */
+.faq { border-top:1px solid var(--border); }
+.faq .q { border-bottom:1px solid var(--border); padding:24px 0; display:grid;
+  grid-template-columns:1fr 1.3fr; gap:36px; }
+.faq h3 { font-size:18px; letter-spacing:-0.01em; }
+.faq p { color:var(--muted); font-size:15px; }
+
+/* cta */
+.cta-box { background:var(--accent); color:var(--on-accent); border-radius:min(var(--r-card),34px);
+  padding:64px 44px; text-align:center; }
+.cta-box h2 { font-size:clamp(27px,4vw,44px); letter-spacing:-0.025em; max-width:20ch; margin:0 auto; }
+.cta-box p { opacity:.82; margin:18px auto 30px; max-width:52ch; }
+.cta-box .btn { background:var(--on-accent); color:var(--accent); border-color:var(--on-accent); }
+
+/* footer */
+footer { border-top:1px solid var(--border); padding:56px 0 40px; font-size:14px; }
+.f-cols { display:grid; gap:34px; grid-template-columns:1.6fr repeat(3,1fr); margin-bottom:44px; }
+.f-cols h4 { font-family:var(--font-body); font-size:12px; letter-spacing:.08em; text-transform:uppercase;
+  color:var(--muted); margin-bottom:14px; font-weight:600; }
+.f-cols ul { list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:9px;
+  color:var(--muted); }
+.f-big .brand { font-size:clamp(42px,10vw,110px); letter-spacing:-0.04em; line-height:1;
+  margin-bottom:34px; display:block; }
+.note { border-top:1px solid var(--border); padding-top:22px; color:var(--muted); font-size:12.5px;
+  display:flex; gap:18px; flex-wrap:wrap; justify-content:space-between; }
+
+@media (max-width:860px) {
+  .hero.split .wrap, .alt-row, .faq .q, .hero.editorial .cols { grid-template-columns:1fr; gap:30px; }
+  .alt-row:nth-child(even) .alt-text { order:0; }
+  .bento { grid-template-columns:repeat(2,1fr); }
+  .bento .card:nth-child(n) { grid-column:span 2; grid-row:span 1; }
+  .f-cols { grid-template-columns:1fr 1fr; }
+  .nav-links { display:none; }
+}</style>
+</head>
+<body>
+<div class="tb"><div class="wide">
+  <a href="./index.html">← Gallery</a>
+  <span class="tag">centered</span>
+  <span class="tag">light</span>
+  <span class="tag">design</span>
+  <span class="sp"></span>
+  <a href="./075_neverhack.html">← prev</a>
+  <a href="./077_adnaut.html">next →</a>
+</div></div>
+<nav class="nav split"><div class="wrap">
+    <span class="brand">Adora</span>
+    <div class="nav-links"><span>Product</span><span>Templates</span><span>Community</span><span>Changelog</span><span>Pricing</span></div>
+    <a class="btn sm cta-sm" href="#">Try it now</a>
+  </div></nav>
+<header class="hero centered"><div class="wrap">
+    <span class="eyebrow badge">Generally available</span>
+    <h1>Design decisions that survive handoff</h1>
+    <p class="lede">Define tokens once and ship them to every surface — web, native and docs — from a single source.</p>
+    <div class="btns"><a class="btn" href="#">Try it now</a>
+      <a class="btn ghost" href="#">Read the docs</a></div>
+  </div></header>
+<section class="hair"><div class="wrap">
+  <p class="eyebrow" style="justify-content:center;display:flex;margin-bottom:22px">Trusted by teams at</p>
+  <div class="logos"><span>Kestrel</span><span>Ironwood</span><span>Ostara</span><span>Northwind</span><span>Fathom</span><span>Meridian</span></div>
+</div></section>
+<section class="hair"><div class="wrap">
+  <div class="sec-head"><h2>Built for the way the work actually happens</h2>
+    <p>Every capability below is part of the core product — no add-on tier, no separate console.</p></div>
+  <div class="grid g3">
+    <article class="card"><h3>Version diffs</h3><p>See exactly which surfaces a token change touches.</p></article>
+    <article class="card"><h3>Handoff</h3><p>Specs generated from the same source as the code.</p></article>
+    <article class="card"><h3>Token pipeline</h3><p>Author once, publish to CSS, Swift, Compose and Figma.</p></article>
+    <article class="card"><h3>Theme matrices</h3><p>Light, dark and brand variants from one definition.</p></article></div>
+</div></section>
+<section class="hair"><div class="wrap">
+  <div class="sec-head"><h2>One surface, every moving part</h2></div>
+  <div class="bento">
+    <article class="card"><h3>Version diffs</h3><p>See exactly which surfaces a token change touches.</p></article>
+    <article class="card"><h3>Handoff</h3><p>Specs generated from the same source as the code.</p></article>
+    <article class="card"><h3>Token pipeline</h3><p>Author once, publish to CSS, Swift, Compose and Figma.</p></article>
+    <article class="card"><h3>Theme matrices</h3><p>Light, dark and brand variants from one definition.</p></article></div>
+</div></section>
+<section class="hair"><div class="wrap">
+  <div class="sec-head"><h2>Straightforward pricing</h2><p>Per workspace, billed monthly. Cancel whenever.</p></div>
+  <div class="tiers">
+    <div class="tier">
+      <h3>Starter</h3>
+      <div class="price">$0</div>
+      <ul><li>1 workspace</li><li>Community support</li><li>7-day history</li></ul>
+      <a class="btn ghost sm" href="#">Try it now</a>
+    </div>
+    <div class="tier on">
+      <h3>Team</h3>
+      <div class="price">$29</div>
+      <ul><li>Unlimited workspaces</li><li>Priority support</li><li>1-year history</li><li>SSO</li></ul>
+      <a class="btn sm" href="#">Try it now</a>
+    </div>
+    <div class="tier">
+      <h3>Scale</h3>
+      <div class="price">Custom</div>
+      <ul><li>Dedicated region</li><li>99.99% SLA</li><li>Audit log export</li><li>Named engineer</li></ul>
+      <a class="btn ghost sm" href="#">Contact sales</a>
+    </div></div>
+</div></section>
+<section class="hair"><div class="wrap">
+  <div class="sec-head"><h2>Questions, answered</h2></div>
+  <div class="faq">
+    <div class="q"><h3>Can we self-host?</h3><p>Yes, on the Scale plan. The same build, running in your own account.</p></div>
+    <div class="q"><h3>What happens to our data if we leave?</h3><p>You export everything in an open format. No retention hold, no exit fee.</p></div>
+    <div class="q"><h3>Do you offer a migration path?</h3><p>We read from the usual suspects and keep both systems in sync during cutover.</p></div></div>
+</div></section>
+<section><div class="wrap">
+  <div class="cta-box">
+    <h2>Design decisions that survive handoff</h2>
+    <p>Define tokens once and ship them to every surface — web, native and docs — from a single source.</p>
+    <a class="btn" href="#">Try it now</a>
+  </div>
+</div></section>
+<footer><div class="wrap f-big">
+    <span class="brand">Adora</span>
+    <div class="f-cols" style="grid-template-columns:repeat(3,1fr)">
+    <div><h4>Product</h4><ul><li>Overview</li><li>Changelog</li><li>Roadmap</li><li>Status</li></ul></div>
+    <div><h4>Company</h4><ul><li>About</li><li>Careers</li><li>Press</li><li>Contact</li></ul></div>
+    <div><h4>Resources</h4><ul><li>Docs</li><li>Guides</li><li>API</li><li>Support</li></ul></div></div><div class="note">
+      <span>Generated template · layout and copy are placeholder scaffolding, not Adora's real site.</span>
+      <span>Tokens: <a href="https://styles.refero.design/style/26a9840f-f128-4cfc-84a5-feb7db1bf577">refero</a></span>
+    </div>
+  </div></footer>
+</body>
+</html>
